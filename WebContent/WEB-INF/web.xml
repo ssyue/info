@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>login</display-name>
+  <welcome-file-list>
+    <welcome-file>/main.jsp</welcome-file>
+  </welcome-file-list>
+    <filter>
+    <display-name>CharacterFilter</display-name>
+    <filter-name>CharacterFilter</filter-name>
+    <filter-class>com.Myfilter.CharacterFilter</filter-class>
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>UTF-8</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>CharacterFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+     <filter>
+    <display-name>LoggingFilter</display-name>
+    <filter-name>LoggingFilter</filter-name>
+    <filter-class>com.Myfilter.LoggingFilter</filter-class>
+    <init-param>
+      <param-name>logfile</param-name>
+      <param-value>/home/yuess/workspace/eclipse4.2/Mylog/infolog/info.log</param-value>
+    </init-param>
+    <init-param>
+	   <param-name> prefix</param-name>
+      <param-value>URI:</param-value></init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>LoggingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  
+  <filter>
+    <filter-name>LoginFilter</filter-name>
+    <filter-class>com.Myfilter.LoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/ScheduleList</url-pattern>
+  </filter-mapping>
+
+  <filter>
+    <display-name>NoCacheFilter</display-name>
+    <filter-name>NoCacheFilter</filter-name>
+    <filter-class>com.Myfilter.NoCacheFilter</filter-class>
+    
+  </filter>
+  <filter-mapping>
+    <filter-name>NoCacheFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+    <url-pattern>*.jsp</url-pattern>
+  </filter-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>TestServlet</display-name>
+    <servlet-name>TestServlet</servlet-name>
+    <servlet-class>com.admin.TestServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TestServlet</servlet-name>
+    <url-pattern>/TestServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <display-name> SingleFileUploadServlet</display-name>
+  <servlet-name>SingleFileUploadServlet</servlet-name>
+  <servlet-class>com.fileUpload.SingleFileUploadServlet</servlet-class>
+  </servlet>
+<servlet-mapping>
+<servlet-name>SingleFileUploadServlet</servlet-name>
+<url-pattern>/singleupload</url-pattern>
+</servlet-mapping>  
+  
+</web-app>

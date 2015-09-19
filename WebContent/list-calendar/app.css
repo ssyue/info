@@ -1,0 +1,1005 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-family:inherit;font-size:100%;vertical-align:baseline}
+ol,ul{list-style:none}
+ol li,ul li{padding:0;margin:0}
+table{border-collapse:collapse;vertical-align:middle}
+caption,th,td{text-align:left;font-weight:400;vertical-align:middle}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+body{line-height:1}
+audio:not([controls]){display:none;height:0}
+template{display:none}
+html{font-size:75%;font-family:'Helvetica Neue',sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+a,nav{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color:transparent}
+button,input,optgroup,select,textarea{font-weight:inherit;font-style:inherit;font-family:inherit;font-size:100%;vertical-align:baseline;color:inherit;margin:0}
+button{overflow:visible}
+button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button}
+input[type=checkbox],input[type=radio]{-webkit-box-sizing:border-box;box-sizing:border-box;padding:0}
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}
+input[type=search]{-webkit-appearance:textfield;-webkit-box-sizing:content-box;box-sizing:content-box}
+input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+input[type=number]::-webkit-outer-spin-button,input[type=number]::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+html{background:#f0f4f7;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color:transparent}
+textarea{resize:none}
+a{text-decoration:none}
+.clearfix{zoom:1}
+.clearfix:after{height:0;content:"";display:block;line-height:0;clear:both}
+.header-wrapper{height:44px;line-height:44px}
+header{position:fixed;top:0;right:0;left:0;z-index:20;height:44px;line-height:44px;background:#07b8dd;color:#fff}
+header a{text-decoration:none}
+header [class^=icon-]{font-weight:700;display:inline-block;vertical-align:middle;font-size:17px}
+header .header-l{position:absolute;top:0;left:0;padding:0 15px}
+header .header-r{position:absolute;top:0;right:0}
+header .header-m{text-align:center;font-size:17px}
+header .layer-menu{position:absolute;right:0;white-space:nowrap;display:none}
+header .layer-menu-show{display:block}
+#splash-screen{position:fixed;top:0;right:0;bottom:0;left:0;z-index:999;background:url(../img/splash-logo.png) no-repeat;-webkit-background-size:139px 43px;background-size:139px 43px;background-color:#fff;background-position:center 200px}
+.logo{display:inline-block;vertical-align:text-bottom;width:70px;height:22px;background:url(../img/logo.png) no-repeat;-webkit-background-size:70px 22px;background-size:70px 22px}
+.img-loading{background:url(../img/loading.png) no-repeat center center;display:inline-block;width:20px;height:20px;-webkit-background-size:20px 20px;background-size:20px 20px;-webkit-animation:loading 1s linear infinite;animation:loading 1s linear infinite;vertical-align:middle;margin-top:-2px}
+.loading-tip{text-align:center;padding-bottom:10px;padding-top:10px;font-size:16px}
+.loading-tip .img-loading{margin-right:5px}
+.status-text-green{color:#1ec09f!important}
+.status-text-red{color:#ff696a!important}
+.status-text-gray{color:#aaa!important}
+.hide-zhidahao{padding-bottom:0!important}
+.hide-zhidahao .baiduServiceBottomBar{display:none}
+.baiduServiceBottomBar>ul>li .count{font-family:monospace}
+@-webkit-keyframes loading{0%{-webkit-transform-origin:center center;transform-origin:center center;-webkit-transform:rotate(0);transform:rotate(0)}
+100%{-webkit-transform-origin:center center;transform-origin:center center;-webkit-transform:rotate(360deg);transform:rotate(360deg)}
+}
+@keyframes loading{0%{-webkit-transform-origin:center center;transform-origin:center center;-webkit-transform:rotate(0);transform:rotate(0)}
+100%{-webkit-transform-origin:center center;transform-origin:center center;-webkit-transform:rotate(360deg);transform:rotate(360deg)}
+}
+@font-face{font-family:icomoon;src:url(fonts/font.woff) format('woff'),url(fonts/font.ttf) format('truetype');font-weight:400;font-style:normal}
+[class^=icon-],[class*=" icon-"]{font-family:icomoon;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.icon-flag:before{content:"\21"}
+.icon-doctor:before{content:"\22"}
+.icon-location:before{content:"\23"}
+.icon-arrow:before{content:"\24"}
+.icon-arrow-down:before{content:'\37'}
+.icon-arrow-up:before{content:'\38'}
+.icon-eval:before{content:"\26"}
+.icon-notice:before{content:"\27"}
+.icon-user-list:before{content:"\28"}
+.icon-eval-list:before{content:"\29"}
+.icon-msg:before{content:"\2a"}
+.icon-calendar:before{content:"\2b"}
+.icon-plus:before{content:"\2c"}
+.icon-user:before{content:"\2d"}
+.icon-menu:before{content:"\2e"}
+.icon-star:before{content:"\2f"}
+.icon-star-small:before{content:'\36'}
+.icon-top:before{content:"\30"}
+.icon-loading:before{content:"\34";-webkit-animation:loading .8s infinite linear;animation:loading .8s infinite linear;display:inline-block}
+.icon-check:before{content:"\32"}
+.icon-del:before{content:"\33"}
+.icon-home::before{content:'\35'}
+.icon-empty-list::before{content:'\39'}
+.icon-plus-with-border::before{content:'\3a'}
+.icon-instant-error::before{content:'\3c';color:#ee615b}
+.icon-notice-overdue::before{content:'\3e'}
+.icon-list-switch::before{content:'\3f'}
+.icon-close::before{content:'\4a';color:#616161}
+.icon-arrow-bend::before{content:'\4b';color:#999}
+.icon-certify-doctor::before{content:'\5a';color:#07b8dd}
+.icon-certified::before{content:'\4d';color:#07b8dd}
+.icon-verified::before{content:'\4f';color:#34c37b}
+.icon-hospital-depart::before{content:'\4e';color:#07b8dd}
+.icon-certify-doctor::before{content:'\5a';color:#07b8dd}
+.icon-doctor-plus::before{content:'\5b';color:#0a7bef}
+.icon-down-btn::before{content:'\5c';color:#0a7bef}
+.icon-pay:before{content:"."}
+.linkagemenu{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;height:100%;overflow:hidden;font-size:15px}
+.linkagemenu .linkage{-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;height:100%;position:relative;background:#fff;border-right:1px solid #ececec}
+.linkagemenu .linkage li{height:44px;line-height:44px;position:relative}
+.linkagemenu .linkage li span{padding:0 15px;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.linkagemenu .linkage .linkage-cur{background:#fff;color:#07b8dd}
+.linkagemenu .linkage:first-child{background:#f0f4f7}
+.linkagemenu .linkage:first-child li{border-bottom:1px solid #ececec}
+.linkagemenu .linkage:first-child .linkage-cur::after{position:absolute;top:0;right:-1px;content:'';width:1px;height:100%;background:#fff}
+.linkagemenu .linkage:last-child{border-right:0}
+.linkagemenu .linkage:last-child li{border:0;background:#fff}
+.linkagemenu .linkage:last-child .linkage-cur::after{content:''}
+.linkagemenu .linkage-disabled{color:#c6c6c6}
+.global-mask{position:fixed;top:0;right:0;bottom:0;left:0;background:rgba(0,0,0,.1)}
+.filter-mask{position:fixed;top:0;right:0;bottom:0;left:0;background:rgba(0,0,0,.1);background:#333;opacity:.5;z-index:1}
+.layer{display:none;position:absolute;z-index:10;background:#fff}
+.layer-show{display:block}
+.layer-mask{z-index:9;position:fixed;top:0;right:0;bottom:0;left:0;background:rgba(0,0,0,.1)}
+.global-alert{position:fixed;top:35%;left:50%;margin-left:-100px;text-align:center;width:130px;padding:25px 35px;font-size:17px;background:rgba(0,0,0,.7);color:#fff;pointer-events:none;z-index:22;border-radius:10px;text-align:center;line-height:20px;display:none}
+.global-alert-show{display:block}
+.global-alert-mask{position:fixed;top:0;right:0;bottom:0;left:0;background:rgba(0,0,0,.1);z-index:21}
+.evaluated-alert-mask{background:#848688}
+.global-confirm{position:fixed;top:30%;right:20px;left:20px;text-align:center;font-size:1.25rem;background:#fff;color:#000;display:none;z-index:23;padding:15px;border-radius:10px}
+.global-confirm-content{padding:30px 0;line-height:20px}
+.global-confirm-foot{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.global-confirm-foot span{color:#01a2df;display:block;padding:8px 10px;text-align:center;background:#07b8dd;border:1px solid #07b8dd;color:#fff;border-radius:10px;-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;text-align:center}
+.global-confirm-foot span:first-child{margin-right:18px}
+.global-confirm-close{position:absolute;top:-10px;right:-10px;width:25px;height:25px;line-height:26px;background:rgba(204,204,204,.9);border-radius:50%;font-size:12px;display:none}
+.global-confirm-show{display:block}
+.global-confirm-mask{position:fixed;top:0;right:0;bottom:0;left:0;background:rgba(0,0,0,.45);z-index:22}
+.login-confirm .global-confirm-title,.fileupload-confirm .global-confirm-title{font-size:17px;color:#333;font-weight:700}
+.login-confirm .global-confirm-content,.fileupload-confirm .global-confirm-content{font-size:15px;padding:15px 0}
+.login-confirm .global-confirm-content p:last-child,.fileupload-confirm .global-confirm-content p:last-child{font-size:12px;color:#666}
+.fileupload-confirm .global-confirm-foot,.del-confirm .global-confirm-foot,.evaluate-confirm .global-confirm-foot{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}
+.fileupload-confirm .global-confirm-foot span:first-child,.del-confirm .global-confirm-foot span:first-child,.evaluate-confirm .global-confirm-foot span:first-child{margin-right:0}
+.fileupload-confirm .global-confirm-foot span:last-child,.del-confirm .global-confirm-foot span:last-child,.evaluate-confirm .global-confirm-foot span:last-child{margin-right:18px}
+.login-confirm .global-confirm-close{display:block}
+.login-confirm .global-confirm-foot .global-confirm-ok{background:#fff;color:#1dadd6}
+.evaluate-confirm-mask{background:#848688}
+.evaluate-confirm .global-confirm-content{padding:0 0 25px}
+.evaluate-confirm .global-confirm-content span{display:inline-block;vertical-align:bottom;width:50px;height:40px;background:url(../img/ten-fee.png) no-repeat;-webkit-background-size:50px 40px;background-size:50px 40px}
+.evaluate-confirm .global-confirm-foot .global-confirm-cancel{background:#fff;color:#1dadd6}
+.global-loading{position:fixed;bottom:40%;left:50%;margin-left:-2em;padding:5px 0;text-align:center;width:4em;font-size:1.167rem;background:rgba(0,0,0,.8);color:#fff;opacity:0;-webkit-transition:opacity .3s;transition:opacity .3s;pointer-events:none}
+.global-loading-show{opacity:1}
+.global-loading-mask{position:fixed;top:0;right:0;bottom:0;left:0;background:rgba(0,0,0,.1);z-index:21}
+.fileupload-group{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;font-size:12px}
+.fileupload{position:relative;width:60px;height:60px;background:#fff;margin-right:15px}
+.fileupload:last-child{margin-right:0}
+.fileupload-success{width:60px;height:60px}
+.fileupload-progress{position:absolute;width:60px;height:60px;text-align:center;background:#fff}
+.fileupload-progress em,.fileupload-progress i{position:absolute;top:0;left:0;width:100%;height:100%}
+.fileupload-progress em{-webkit-background-size:30px 30px;background-size:30px 30px;margin-top:0}
+.fileupload-progress i{position:absolute;text-align:center;line-height:60px;-webkit-transform:scale(0.6);transform:scale(0.6);color:#333}
+.fileupload-del{position:absolute;bottom:-5px;right:-5px;z-index:1;width:20px;height:20px;line-height:20px;background:rgba(0,0,0,.6);border:1px solid #fff;border-radius:20px;color:#fff;text-align:center}
+.fileupload-input{position:absolute;top:0;right:0;bottom:0;left:0;opacity:0;width:60px;height:60px}
+.fileupload-img,.fileupload-retry{position:absolute;top:0;right:0;bottom:0;left:0;width:60px;height:60px;background:#ccc}
+.fileupload-retry{display:table;text-align:center}
+.fileupload-retry span{display:table-cell;vertical-align:middle;color:#666}
+.fileupload .icon-plus-with-border{position:absolute;top:0;right:0;bottom:0;left:0;font-size:60px;color:#cfcfcf;width:60px;height:60px;line-height:60px;text-align:center}
+.fileupload-tip{position:absolute;top:4px;left:70px;right:0;line-height:16px;color:#999}
+.imageviewer{display:block;position:fixed;top:44px;right:0;bottom:0;left:0;z-index:19;background:#000}
+.imageviewer [data-role~=close]{position:absolute;top:5px;right:5px;z-index:2048;line-height:30px;width:30px;height:30px;font-size:12px;text-align:center;border-radius:30px;color:#fff;background:#343434}
+.imageviewer>[data-role~=wrapper]{width:100%;height:100%}
+.imageviewer>[data-role~=wrapper] i{position:absolute;top:50%;left:50%;margin-top:-54px;margin-left:-10px}
+.imageviewer>[data-role~=wrapper] img{-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-user-select:none;-ms-user-select:none;user-select:none;user-drag:none;display:block;margin:0 auto}
+.cm-container,.doctor-detail .container,.reservation-detail .container,.profile-comment-list .container,.profile-comment-detail .container,.profile-account .container,.profile-account-add .container,.profile-account-detail .container,.profile-notice .container,.profile-reservation .container,.profile-reservation-detail .container,.comment-detail .container{min-height:360px;font-size:1.25rem;color:#333}
+.cm-text-btn{text-decoration:none;display:inline-block;height:100%;text-align:center;color:#fff;font-size:1.25rem;color:#fff;text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color:transparent}
+.cm-text-btn:visited,.cm-text-btn:active{color:#fff}
+.cm-text-right-btn{padding:0 15px}
+.cm-icon-btn{text-decoration:none;display:inline-block;padding:0 10px;height:100%;text-align:center;font-size:1.333rem}
+.cm-btn-white{color:#07b8dd;font-size:1rem;text-align:center;display:inline-block;padding:5px 10px;background:#fff;border-radius:18px;border:2px solid #07b8dd;width:100px;height:18px;line-height:18px;margin:auto;text-decoration:none}
+a{color:#333;text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color:transparent}
+a:visited,a:active{color:#333}
+.cm-no-data{padding:75px 15px 0;text-align:center;color:#333}
+.cm-no-data .img-wrap{display:inline-block;margin-bottom:12px}
+.cm-no-data p{line-height:1.5;font-size:1.25rem;text-align:center;color:#999}
+.cm-no-data .btn-wrap{display:inline-block;color:#fff;font-size:1.417rem;text-align:center;text-decoration:none;background:#07b8dd;border-radius:45px;width:100%;min-width:45px;height:45px;line-height:45px;margin:auto;margin-top:25px}
+.cm-content-tip{font-size:1rem;padding-left:15px;line-height:40px;color:#666}
+.cm-content-tip span{color:#666;font-size:1.25rem}
+.cm-doctor-detail{background:#fff;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;color:#333;padding:15px}
+.cm-doctor-detail .detail-avatar-wrap{width:65px;height:100%;padding-right:15px}
+.cm-doctor-detail .detail-avatar{text-align:center;width:100%;height:100%}
+.cm-doctor-detail .avatar{font-size:3.75rem;border-radius:50px;border:1px solid #cfcfcf;color:#cfcfcf;display:inline-block;width:50px;height:50px}
+.cm-doctor-detail .info-wrap{-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1}
+.cm-doctor-detail .info-name{font-size:1.417rem;font-weight:700}
+.cm-doctor-detail .info-job{padding-left:5px;color:#666;font-size:1.25rem}
+.cm-doctor-detail .info-hospital{padding:8px 0;font-size:1.167rem}
+.cm-doctor-detail .info-hospital span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:inline-block}
+.cm-doctor-detail .info-hos-name{max-width:14.5em;padding-right:8px}
+.cm-doctor-detail .info-depart{max-width:5.5em}
+.cm-doctor-detail .info-pos{font-size:1rem;color:#999;padding:0 0 8px}
+.cm-doctor-detail .info-pos-text{padding:0 5px 0 0;border-right:1px solid #ececec;max-width:18.5em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:inline-block}
+.cm-doctor-detail .info-pos-link{padding:0 0 0 5px;text-decoration:none;color:#07b8dd}
+.cm-doctor-detail .info-time{font-size:1rem}
+.cm-doctor-detail .info-time-stress{color:#07b8dd}
+.cm-load-wrap{height:0;line-height:0;text-align:center;font-size:1.667rem;display:none}
+.cm-load-wrap.loading{height:50px;line-height:50px;display:block}
+.patient-comment-rate{margin-top:12px;margin-left:15px;margin-bottom:15px;font-size:12px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.patient-comment-rate>div{margin-right:4px}
+.patient-comment-rate>div:last-child{margin-right:0}
+.patient-comment-rate i.normal{color:#bbb}
+.patient-comment-rate i.light{color:#fd8f01}
+.patient-comment-rate .rate{-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1}
+.patient-comment-rate .rate-item-name{color:#999;margin-right:2px}
+.doctor-profile-comment{background:#fff;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;padding-top:10px;width:100%}
+.doctor-profile-comment .detail-pic-wrap{padding-left:15px;padding-right:10px}
+.doctor-profile-comment .detail-pic{width:50px;height:50px;border-radius:50px;overflow:hidden;border:1px solid #c0cfda}
+.doctor-profile-comment .detail-pic img{width:50px;height:50px;border-radius:50px}
+.doctor-profile-comment .info-wrap{-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;padding-right:15px}
+.doctor-profile-comment .info-title{line-height:15px}
+.doctor-profile-comment .info-title em{display:inline-block;width:14px;height:14px;background:url(../img/yi.png) no-repeat;-webkit-background-size:14px 14px;background-size:14px 14px;vertical-align:-1px;margin-left:6px}
+.doctor-profile-comment .info-title .doctor-name{font-size:15px;color:#333}
+.doctor-profile-comment .info-title .info-job{color:#666;font-size:12px;margin-left:10px}
+.doctor-profile-comment .info-hospital{color:#333;margin-top:10px;font-size:12px}
+.doctor-profile-comment .info-hospital .name-hospital{display:inline-block;max-width:13em;-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.doctor-profile-comment .info-hospital .name-depart{display:inline-block;margin-left:10px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:5em}
+.doctor-profile-comment .info-time{margin-bottom:15px;color:#333;font-size:12px;display:inline-block;margin-top:10px}
+.menu{height:44px;width:44px;text-align:center;position:relative}
+.menu:before{line-height:44px}
+.menu ins{width:10px;height:10px;line-height:10px;font-size:1rem;text-align:center;color:#fff;background:red;border-radius:999px;text-decoration:none;pointer-events:none;position:absolute;right:6px;top:10px}
+.menu-layer{position:absolute;top:55px;right:5px;font-size:1.25rem;background:#fff;width:179px;border-radius:5px;-webkit-box-shadow:0 0 5px #909090;box-shadow:0 0 5px #909090}
+.menu-layer:before{position:absolute;content:' ';top:-18px;right:14px;width:0;height:0;border:9px solid #c9cdcf;border-top-color:transparent;border-left-color:transparent;border-right-color:transparent}
+.menu-layer:after{position:absolute;content:' ';top:-16px;right:14px;width:0;height:0;border:9px solid #fff;border-top-color:transparent;border-left-color:transparent;border-right-color:transparent}
+.menu-layer .item{height:44px;line-height:44px;padding:0 15px;border-bottom:1px solid #ececec;color:#666;text-align:left}
+.menu-layer .item .arrow-pay,.menu-layer .item .account-icon{display:inline-block;height:44px;position:relative;top:10px;vertical-align:middle;padding-left:25px;margin-right:22px;font-size:1.667rem;font-weight:400;pointer-events:none;background-image:url(../img/icon-wallet.png);-webkit-background-size:80% 80%;background-size:80%;background-repeat:no-repeat}
+.menu-layer .item .account-icon{background-image:url(../img/icon_my_profile.png)}
+.menu-layer .item:last-child{border:0}
+.menu-layer .item [class^=icon-]{display:inline-block;vertical-align:middle;margin-right:25px;font-size:1.667rem;font-weight:400;pointer-events:none}
+.menu-layer .item ins{width:18px;height:18px;line-height:18px;display:inline-block;margin-left:13px;pointer-events:none;top:-2px;position:relative;display:none}
+.menu-layer .item em{color:#07b8dd;pointer-events:none}
+.menu-layer .logined em{color:#333;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;float:left;width:7em}
+.menu-layer .logined span{float:right;color:#07b8dd;line-height:normal;margin-top:15px}
+.menu-layer .no-login{text-align:center}
+.menu-mask{position:fixed;top:0;right:0;bottom:0;left:0;background:rgba(0,0,0,0);z-index:15}
+.reserve-doctor{padding:15px;background:#fff;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.reserve-doctor .doctor-avatar{margin-right:15px;width:50px;height:50px;border-radius:50px;overflow:hidden;border:1px solid #ddd}
+.reserve-doctor .doctor-avatar img{width:50px;height:50px;border-radius:50px}
+.reserve-doctor div:last-child{padding-top:3px;color:#282828}
+.reserve-doctor div:last-child p:first-child{margin-bottom:8px}
+.reserve-doctor div:last-child p:first-child span:first-child{font-size:1.417rem;font-weight:700;margin-right:5px}
+.reserve-doctor div:last-child p:first-child em{display:inline-block;width:14px;height:14px;background:url(../img/yi.png) no-repeat;-webkit-background-size:14px 14px;background-size:14px 14px;vertical-align:-1px;margin-right:5px}
+.reserve-doctor div:last-child p:first-child span:last-child{padding-left:15px;font-size:1.25rem;color:#666;padding-left:0}
+.reserve-doctor div:last-child p:nth-child(2){margin-bottom:10px}
+.reserve-doctor div:last-child p:nth-child(2) span{display:inline-block}
+.reserve-doctor div:last-child p:nth-child(2) span:first-child{max-width:13em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-right:6px}
+.reserve-doctor div:last-child p:nth-child(2) span:last-child{max-width:5em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.reserve-doctor div:last-child p:nth-child(3){color:#07b8dd;font-weight:700}
+.reserve-doctor div:last-child p:nth-child(3) span:first-child{margin-right:5px}
+.reserve-tip{height:40px;line-height:40px;background:#f0f4f7;border-top:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1;color:#666;padding-left:15px;font-size:13px}
+.reserve-tip span{font-size:11px}
+.reserve-main{background:#fff;font-size:15px;margin-bottom:15px;border-bottom:1px solid #e1e1e1}
+.reserve-main input{-webkit-appearance:none;border:0;background:#fff;outline:0;display:block;width:100%;-webkit-box-sizing:border-box;box-sizing:border-box;height:100%;line-height:normal}
+.reserve-main .captcha{overflow:hidden;height:30px;line-height:30px;padding-top:7px;padding-bottom:7px}
+.reserve-main .captcha input{float:left;width:10em;line-height:normal}
+.reserve-main .captcha span{float:right;padding:0 12px;text-align:center;height:30px;line-height:30px;font-size:15px;background:#07b8dd;color:#fff;display:inline-block;border-radius:30px}
+.reserve-main .captcha .disabled{background:#cfd8e1;color:#838d95}
+.reserve-form>p{padding:7px 15px;border-bottom:1px solid #ececec;height:30px;line-height:30px;position:relative}
+.reserve-form>p:last-child{border-bottom:0}
+.reserve-form>p .reserve-instant-state{position:absolute;text-align:right;top:7px;right:15px;line-height:30px}
+.reserve-form>p .reserve-instant-state .instant-state-icon{display:inline-block;margin-right:5px;font-size:18px;position:relative;top:1px}
+.reserve-form>p .reserve-instant-state .instant-tip{color:#ee615b;font-size:15px}
+.reserve-df{padding:0 15px;background:#fff;border-top:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1}
+.reserve-df textarea{-webkit-box-sizing:border-box;box-sizing:border-box;display:block;width:100%;height:100px;border:0;font-size:15px;border-bottom:1px solid #ececec;margin-bottom:15px;line-height:20px;outline:0}
+.reserve-df .fileupload-group{margin-bottom:15px}
+.reserve-textarea{padding:10px;margin:15px 0;border:1px solid #ececec}
+.reserve-op{padding:30px 15px 60px;text-align:center;font-size:17px}
+.reserve-op span{display:block;height:44px;line-height:44px;background:#17aad5;color:#fff;border-radius:30px}
+.reserve-op .disabled{background:#d8e0e7;color:#7f8990}
+.star-group{margin-bottom:12px}
+.star-group>div{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin-bottom:12px}
+.star-group>div label{font-size:15px}
+.star-group>div em{font-size:12px;color:#666;line-height:16px;margin-right:6px;display:inline-block;width:4em;white-space:nowrap}
+.star-group>div div{-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1}
+.star-group>div div span{margin-right:10px}
+.star-group>div div span .icon-star{color:#bbb;font-size:15px;padding:5px 10px 5px 0}
+.star-group>div div span:last-child{margin-right:0}
+.star-group>div div .star-selected .icon-star{color:#fd8f01}
+.star-group>div:last-child{margin-bottom:0}
+.widget-textarea{font-size:1.25rem;line-height:1.5;color:#999}
+.widget-textarea-active{color:#333}
+.widget-textarea .widget-textarea-wrap{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;min-height:50px}
+.widget-textarea .widget-textarea-wrap textarea{display:block;-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;margin:0;border:0;line-height:inherit;background:0 0;outline:0;height:50px}
+.widget-textarea p{text-align:right;display:none}
+.patient-comment{padding:15px 15px 12px;border-bottom:1px solid #c3dadc}
+.patient-comment .patient-name{color:#333;font-size:15px;font-weight:700;margin-right:8px}
+.patient-comment .comment-time{color:#999}
+.patient-comment .patient-disease-items{font-size:15px;color:#999;margin:6px 0;line-height:21px}
+.patient-comment .patient-comment-rate{margin:6px 0 12px;color:#999;font-size:12px}
+.patient-comment .patient-comment-rate>div{margin-right:6px}
+.patient-comment .patient-comment-rate >div:last-child{margin-right:0}
+.patient-comment .patient-rate-content{line-height:21px;font-size:15px}
+.patient-comment .patient-other-comment{border-top:1px solid #e1e1e1;padding-top:9px;margin-top:11px}
+.patient-comment .patient-other-comment .info{color:#999;margin:6px 0}
+.patient-comment .patient-other-comment .info .person{margin-left:5px}
+.patient-comment .patient-other-comment .content{line-height:21px;margin-left:17px;font-size:15px}
+.home .logo-img{background:url(../img/baidu_doc.png);width:68px;height:22px;display:inline-block;-webkit-background-size:100% 100%;background-size:100% 100%;margin-top:10px}
+.home .home-container{background-color:#f4f4f4}
+.home .home-container .banner-image{position:relative;width:100%}
+.home .home-container .banner-image img{width:100%}
+.home .home-container h2{color:#07b8dd;font-size:14px;height:34px;line-height:34px;padding-left:15px;border-top:1px solid #e2e2e2;border-bottom:1px solid #e2e2e2}
+.home .home-container h2 span{float:left}
+.home .home-container h2 .white{width:2px;height:14px;background-color:#07b8dd;display:inline-block;margin-right:7px;margin-top:10px}
+.home .home-container .empty-home{width:180px;height:180px;margin:98px auto;background:url(../img/empty-for-home01.png);-webkit-background-size:100% 100%;background-size:100% 100%;display:none}
+.home .region-menu{position:fixed;top:0;left:15px;color:#fff;height:44px;z-index:21;line-height:44px;font-size:14px}
+.home .region-menu span{margin-right:3px}
+.home .region-menu i:before{content:'\37';font-size:12px}
+.home .hot-depart-list{margin-top:10px;background-color:#fff;height:106px}
+.home .hot-depart-list li{float:left;width:25%;height:35px;font-size:14px;line-height:35px;text-align:center;-webkit-box-sizing:border-box;box-sizing:border-box;border-right:1px solid #e2e2e2;border-bottom:1px solid #e2e2e2}
+.home .hot-depart-list li:hover{background-color:#f4f4f4}
+.home .hot-depart-list .more-wrap{display:none}
+.home .hot-depart-list .more{width:19px;height:4px;display:inline-block;border:none;background:url(../img/icon_more.png) center center no-repeat;-webkit-background-size:100% 100%;background-size:100% 100%;vertical-align:4px}
+.home .hot-hospital-list{margin-top:10px;background-color:#fff;border-bottom:1px solid #e2e2e2}
+.home .hot-hospital-list .more-wrap{text-align:center;display:none;border-top:1px solid #e2e2e2}
+.home .hot-hospital-list .more{height:40px;line-height:40px;color:#07b8dd;font-size:14px}
+.home .hot-hospital-list .left{float:left;margin-right:10px}
+.home .hot-hospital-list img{width:68px;height:50px}
+.home .hot-hospital-list h3{font-size:14px;color:#333;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.home .hot-hospital-list li{padding:15px 5px 15px 15px;border-bottom:1px solid #e2e2e2}
+.home .hot-hospital-list li:last-child{border-bottom:none}
+.home .hot-hospital-list .detail{color:#666}
+.home .hot-hospital-list .detail .white{padding-left:10px}
+.home .hot-hospital-list .tip{margin:6px 0}
+.home .hot-hospital-list .tip span{padding:2px 6px;margin-right:6px;border-radius:3px;color:#fff;background-color:#ff904d;font-size:10px}
+.home .hot-hospital-list .tip .blue{background-color:#84c2ff}
+.home .hot-hospital-list .yellow{color:#ff904d}
+.home .bottom{width:100%;padding-bottom:15px}
+.home .bottom .first{padding-top:15px;border-top:1px solid #ebeff2 s}
+.home .bottom .first a{color:#24c0e0}
+.home .bottom p{text-align:center;font-size:.9em;line-height:22px;color:#333}
+.home .bottom p a{color:#333}
+.home #photo{width:100%;height:149px;overflow:hidden;position:relative}
+.home #photo .pic-view{height:100%;display:-webkit-box;display:box;overflow:hidden;-webkit-transition:all .3s ease;transition:all .3s ease;opacity:1}
+.home #photo .pic-view.show{opacity:1}
+.home #photo .pic-view li{position:absolute;height:100%;display:box;display:-webkit-box;text-align:center;-webkit-box-pack:center;-webkit-box-align:center;overflow:hidden}
+.home #photo .pic-view img{width:100%!important}
+.home #photo .pic-view li a{display:block;vertical-align:middle}
+.home #photo .pic-view li a img{display:block;max-width:100%;max-height:100%}
+.home .pagination{width:100%;left:0;bottom:5px;position:absolute;text-align:center;-webkit-transition:300ms;transition:300ms;z-index:10;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
+.home .pagination span{width:13px;height:3px;display:inline-block;-webkit-background-origin:padding;background-origin:padding;background-color:rgba(255,255,255,0);margin:0 3px;border:1px solid rgba(255,255,255,.5)}
+.home .pagination span.active{background-color:#fff}
+.home .spinner{width:100%;height:100%;background:#111;position:absolute;left:0;top:0;bottom:0;text-align:center;display:box;display:-webkit-box;text-align:center;-webkit-box-pack:center;-webkit-box-align:center;overflow:hidden}
+.home .spinner div{width:15px;height:15px;background-color:#007aff;border-radius:100%;display:inline-block;-webkit-animation:bouncedelay 1.4s infinite ease-in-out;animation:bouncedelay 1.4s infinite ease-in-out;-webkit-animation-fill-mode:both;animation-fill-mode:both}
+.home .spinner .bounce1{-webkit-animation-delay:-.32s;animation-delay:-.32s}
+.home .spinner .bounce2{-webkit-animation-delay:-.16s;animation-delay:-.16s}
+.home .padleft7{padding-left:7px}
+.home .padright7{padding-right:7px}
+.home .borderright{border-right:1px solid #d0d3d6}
+.account .header-wrapper header{position:relative}
+.account .account-head{height:120px;background-color:#07b8dd;text-align:center}
+.account .account-head span{width:60px;height:60px;border-radius:100%;margin-bottom:15px;display:inline-block;-webkit-background-size:100% 100%;background-size:100% 100%;background-image:url(../img/my_profile_dafult_photo.png)}
+.account .account-head .login-btn{width:100px;height:30px;line-height:30px;color:#fff;background:#32dafd;margin:0 auto;border-radius:15px;font-size:15px}
+.account .account-head p{font-size:20px;color:#fff}
+.account .account-content{background:#fff}
+.account .account-content a{display:block;height:44px;line-height:44px;padding:0 15px;border-bottom:1px solid #f0f0f0;color:#333;text-align:left;position:relative;font-size:15px}
+.account .account-content a .item{display:inline-block;height:25px;width:25px;position:relative;top:0;vertical-align:middle;margin-right:10px;font-size:1.667rem;font-weight:400;background-size:80% 80%;-webkit-background-size:80% 80%;background-repeat:no-repeat}
+.account .account-content a .arrow-pay{background-image:url(../img/my_profile_wallet.png)}
+.account .account-content a .item-calendar{background-image:url(../img/my_profile_subscribe.png)}
+.account .account-content a .item-eval{background-image:url(../img/my_profile_evaluate.png)}
+.account .account-content .item-notice{background-image:url(../img/my_profile_msg.png)}
+.account .account-content .item-user{background-image:url(../img/my_profile_manage.png)}
+.account .account-content .my-icon-arrow{background-image:url(../img/arrow.png);-webkit-background-size:100% 100%;background-size:100% 100%;width:9px;height:15px;line-height:31px;float:right;margin-top:14px}
+.account .account-content ins{width:20px;line-height:20px;font-size:1rem;color:#fff;text-align:center;background:red;border-radius:999px;text-decoration:none;pointer-events:none;position:absolute;right:40px;top:10px}
+.account .login-out{width:90%;margin:98px auto;color:#fc6161;border:1px solid #dcdcdc;border-radius:30px;background:#fff;height:44px;line-height:44px;font-size:15px;text-align:center}
+.home-region .current-region{font-size:1.25rem;display:block;height:44px;line-height:44px;border-bottom:1px solid #ececec;padding-left:15px}
+.home-region .current-region .label{color:#999}
+.home-region .current-region span{color:#333}
+.home-region .region-panel{position:fixed;top:89px;bottom:0;left:0;right:0;overflow:hidden}
+.department .depatment-list li{border-bottom:1px solid #ececec;padding:0 15px;background:#fff}
+.department .depatment-list li span{font-size:1.417rem;height:44px;line-height:44px;color:#333;display:inline-block;width:100%}
+.department .depatment-list li .icon-arrow{transform:rotate(180deg);-webkit-transform:rotate(180deg);color:#d9e1e8;font-size:20px;height:44px;line-height:44px;float:right}
+.hotHospitalList .hotHospitalListCon{margin-top:10px;background-color:#fff}
+.hotHospitalList .hotHospitalListCon .left{float:left;margin-right:10px}
+.hotHospitalList .hotHospitalListCon img{width:68px;height:68px}
+.hotHospitalList .hotHospitalListCon h3{font-size:14px;color:#333;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.hotHospitalList .hotHospitalListCon li{padding:15px 5px 15px 15px;border-bottom:1px solid #e2e2e2}
+.hotHospitalList .hotHospitalListCon .detail{color:#666;margin-bottom:4px}
+.hotHospitalList .hotHospitalListCon .detail .white{padding-left:10px}
+.hotHospitalList .hotHospitalListCon .tip{margin:6px 0}
+.hotHospitalList .hotHospitalListCon .tip span{padding:2px 6px;margin-right:6px;border-radius:3px;color:#fff;background-color:#ff904d}
+.hotHospitalList .hotHospitalListCon .tip .blue{background-color:#84c2ff}
+.hotHospitalList .hotHospitalListCon .yellow{color:#ff904d}
+.hotHospitalList .hotHospitalListCon .area{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.hotHospitalList .hotHospitalListCon p{padding:10px 15px;border-bottom:1px solid #e2e2e2;color:#999;font-size:14px}
+.home-air{background:#fff}
+.home-air #air-summary{background-image:url(../img/air-bg.png);-webkit-background-size:100% 100%;background-size:100%;background-repeat:none;height:130px;position:relative}
+.home-air #air-summary p:first-child{text-align:center;padding-top:36px}
+.home-air #air-summary p:first-child span:nth-child(1){font-size:18px;color:#fff}
+.home-air #air-summary p:first-child span:nth-child(2){font-size:50px;color:#fff;margin:0 20px 0 13px}
+.home-air #air-summary p:first-child span:nth-child(3){padding:6px 12px;color:#fff;border-radius:10px;position:relative;font-size:20px;top:-4px}
+.home-air #air-summary p:last-child{position:absolute;right:10px;bottom:9px;color:#eee;font-size:15px;line-height:17px}
+.home-air #air-advice{font-size:1.25rem;line-height:17px;padding:15px 16px;color:#333;background:#f6f6f6;border:1px solid #e1e1e1}
+.home-air .chart-title{line-height:17px;padding-top:13px;padding-bottom:3px;margin:0 10px;color:#666}
+.home-air #air-day,.home-air #air-week{width:310px;margin:0 auto;height:200px}
+.home-air #air-day{margin-bottom:10px}
+.home-air #air-week{margin-bottom:10px}
+.home-air #air-def{font-size:15px;line-height:21px;padding:12px;background:#f6f6f6;color:#666;border-top:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1;margin-bottom:25px}
+.yihuwang-activity .activity-bg{background:url(../img/activity-bg.png) no-repeat 0 0;-webkit-background-size:100% 100%;background-size:100% 100%}
+.yihuwang-activity .order-btn{top:50%;width:100%;height:120px;left:0;position:absolute}
+.yihuwang-activity .back{bottom:0;width:100%;height:120px;left:0;position:absolute}
+.my-activity .activity-bg{background:url(../img/my-activity.png) no-repeat 0 0;-webkit-background-size:100% 100%;background-size:100% 100%}
+.my-activity .order-btn{top:50%;width:100%;height:120px;left:0;position:absolute}
+.my-activity .back{bottom:0;width:100%;height:120px;left:0;position:absolute}
+.doctor-list .filters-wrap{position:relative;z-index:10;height:41px;background:#f0f4f7}
+.doctor-list .filters{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;height:40px;line-height:40px;background:#f5f5f5;border-bottom:1px solid #e1e1e1;padding:0 24px;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color:transparent}
+.doctor-list .filters-fixed{position:fixed;top:0;right:0;left:0}
+.doctor-list dl{-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1}
+.doctor-list dt{position:relative;white-space:nowrap;font-size:15px}
+.doctor-list dt span{line-height:normal;display:inline-block;vertical-align:middle;max-width:3.5em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.doctor-list dt i{padding-left:3px;display:inline-block;vertical-align:middle;color:#999;font-size:10px;margin-top:2px}
+.doctor-list dt i:before{content:'\37'}
+.doctor-list dt:before{content:' ';width:0;height:0;position:absolute;display:none;z-index:10;left:15px;bottom:0;border:8px solid #e1e1e1;border-top-color:transparent;border-left-color:transparent;border-right-color:transparent}
+.doctor-list dt:after{content:' ';width:0;height:0;position:absolute;display:none;z-index:10;left:15px;bottom:-1px;border:8px solid #fff;border-top-color:transparent;border-left-color:transparent;border-right-color:transparent}
+.doctor-list dd{display:none;position:absolute;right:0;left:0;background:#fff;overflow:hidden;border-top:1px solid #e1e1e1;margin-top:-1px}
+.doctor-list .filters-3 dl:nth-child(1) dt{text-align:left}
+.doctor-list .filters-3 dl:nth-child(2) dt{text-align:center}
+.doctor-list .filters-3 dl:nth-child(2) dt::before,.doctor-list .filters-3 dl:nth-child(2) dt::after{left:50%;margin-left:-5px}
+.doctor-list .filters-3 dl:nth-child(3) dt{text-align:right}
+.doctor-list .filters-3 dl:nth-child(3) dt::before,.doctor-list .filters-3 dl:nth-child(3) dt::after{left:auto;right:15px}
+.doctor-list .filters-4{padding-right:0}
+.doctor-list .filters-4 dl{padding-right:25px}
+.doctor-list .filter-active dt:before{display:block}
+.doctor-list .filter-active dt:after{display:block}
+.doctor-list .filter-active i:before{content:'\38'}
+.doctor-list .filter-time.filter-active dt:after{border-bottom-color:#f0f4f7}
+.doctor-list .filter-time.filter-active dt.filter-select-first:after{border-bottom-color:#fff}
+.doctor-list .filter-region .region-current{line-height:44px;border-bottom:1px solid #ececec;color:#bbb;font-size:15px;padding-left:15px}
+.doctor-list .filter-region .region-current span{color:#333}
+.doctor-list .filter-time dd{height:353px}
+.doctor-list .filter-time .linkage:first-child,.doctor-list .filter-depart .linkage:first-child{-webkit-box-flex:0;-webkit-flex:none;-ms-flex:none;flex:none;width:125px}
+.doctor-list .filter-depart dd,.doctor-list .filter-region dd{height:365px}
+.doctor-list .filter-region .linkage:first-child{-webkit-box-flex:0;-webkit-flex:none;-ms-flex:none;flex:none;width:88px}
+.doctor-list .filter-region .linkage:nth-child(2){-webkit-box-flex:0;-webkit-flex:none;-ms-flex:none;flex:none;width:88px}
+.doctor-list .filter-medTitle .linkage li{text-align:center;border-bottom:1px solid #ececec}
+.doctor-list .filter-medTitle .linkage li:last-child{border-bottom:0}
+.doctor-list .filter-show{display:block}
+.doctor-list .list-info{position:relative;z-index:11;background:#fff;padding:15px;border-bottom:1px solid #e1e1e1;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.doctor-list .list-info .list-avatar{width:80px;color:#07b8dd;text-align:center}
+.doctor-list .list-info .list-avatar img{width:80px;height:80px;margin-bottom:10px}
+.doctor-list .list-info .list-avatar a{color:#07bddd;text-decoration:none}
+.doctor-list .list-info .list-content{margin-left:15px;color:#333;-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1}
+.doctor-list .list-info .list-content h3{font-size:15px;line-height:16px;margin-bottom:3px;color:#333;margin-bottom:6px;max-width:13em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.doctor-list .list-info .list-content p{line-height:16px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#333;margin-bottom:1px}
+.doctor-list .list-info .list-content p label{color:#999}
+.doctor-list .list-info .list-content p.desc{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;white-space:normal}
+.doctor-list .list-info .list-content p:last-child{margin-bottom:0}
+.doctor-list .list-loading{text-align:center;padding:20px 0;font-size:18px;background:#f0f4f7;color:#666}
+.doctor-list .list-loading .img-loading{margin-right:10px}
+.doctor-list .doctors-summary{border-bottom:1px solid #e1e1e1;font-size:12px;padding:8px 15px;background:#f2f2f2;font-weight:400}
+.doctor-list .doctors-summary em{color:red}
+.doctor-list .list-other-site-tip{background:#fff3b3;color:#9b9d98}
+.doctor-list .doctors{background:#fff}
+.doctor-list .doctors-empty{text-align:center;padding:80px 0}
+.doctor-list .doctors-empty p:first-child{margin-bottom:7px;background:url(../img/empty-for-doctors.png) no-repeat center center;-webkit-background-size:127px 92px;background-size:127px 92px;height:92px}
+.doctor-list .doctors-empty p:last-child{color:#999;font-size:15px;line-height:21px}
+.doctor-list .doctor{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;color:#333;font-size:12px;position:relative}
+.doctor-list .doctor:active{background:#f6f6f6;-webkit-user-select:none;-ms-user-select:none;user-select:none}
+.doctor-list .doctor-l{text-align:center;padding-left:15px;padding-top:15px;padding-right:10px}
+.doctor-list .doctor-l .doctor-avatar{width:50px;height:50px;border-radius:50px;overflow:hidden;border:1px solid #c0cfda}
+.doctor-list .doctor-l .doctor-avatar img{width:50px;height:50px;border-radius:50px}
+.doctor-list .doctor-m{padding-top:15px;padding-bottom:12px;padding-right:15px;-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;border-bottom:1px solid #ececec}
+.doctor-list .doctor-m .doctor-nt{font-size:17px;line-height:17px;margin-bottom:10px}
+.doctor-list .doctor-m .doctor-nt .doctor-name{font-weight:700;margin-right:5px}
+.doctor-list .doctor-m .doctor-nt .doctor-v{display:inline-block;width:14px;height:14px;background:url(../img/yi.png) no-repeat;-webkit-background-size:14px 14px;background-size:14px 14px;vertical-align:-1px;margin-right:5px}
+.doctor-list .doctor-m .doctor-nt .doctor-title{font-size:15px}
+.doctor-list .doctor-m .doctor-meta{line-height:12px;margin-bottom:7px}
+.doctor-list .doctor-m .doctor-meta span{display:inline-block}
+.doctor-list .doctor-m .doctor-meta span:first-child{margin-right:10px;max-width:13em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.doctor-list .doctor-m .doctor-meta span:last-child{max-width:5em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.doctor-list .doctor-m .doctor-skill{line-height:18px;color:#999;word-wrap:bread-word;word-break:break-all}
+.doctor-list .doctor .doctor-reserving,.doctor-list .doctor .doctor-unreserve{position:absolute;z-index:1;top:0;right:15px;width:49px;height:28px;line-height:28px;color:#fff;text-align:center}
+.doctor-list .doctor .doctor-reserving:before,.doctor-list .doctor .doctor-unreserve:before{font-family:icomoon;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;color:#07b8dd;position:absolute;left:0;top:-1px;z-index:-1;content:'\21';font-size:2.5rem}
+.doctor-list .doctor .doctor-unreserve{color:#666}
+.doctor-list .doctor .doctor-unreserve:before{color:#bbb}
+.doctor-list .doctor-without-level .doctor-skill{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.doctor-list .doctor-with-level .doctor-meta{margin-bottom:10px}
+.doctor-list .doctor-with-level .doctor-level{line-height:12px;margin-bottom:7px}
+.doctor-list .doctor-with-level .doctor-skill{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.doctor-list section:last-child .doctor:first-child .doctor-m{border-top:0}
+.doctor-detail .main-content-tip{font-size:1rem;color:#333;background:#cfcfcf;line-height:20px;text-align:center}
+.doctor-detail .sub-content-tip{font-size:1.083rem;padding:10px;line-height:18px;color:#333}
+.doctor-detail .sub-content-tip span{color:#999;padding-right:10px}
+.doctor-detail .sub-content-info{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.doctor-detail .sub-content-info>div:first-child{-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1}
+.doctor-detail .content-btn-wrap a{display:inline-block;color:#fff;font-size:1.417rem;text-align:center;text-decoration:none;background:#07b8dd;border-radius:45px;width:70px;min-width:45px;height:45px;line-height:45px;margin:auto}
+.doctor-detail .doctor-detail-wrap{background:#fff;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;color:#333;padding:15px}
+.doctor-detail .doctor-detail-wrap .detail-avatar-wrap{height:100%;padding-right:15px}
+.doctor-detail .doctor-detail-wrap .detail-avatar-wrap .detail-avatar{text-align:center;margin-bottom:18px;width:50px;height:50px;border-radius:50px;overflow:hidden;border:1px solid #c0cfda}
+.doctor-detail .doctor-detail-wrap .detail-avatar-wrap .detail-avatar img{width:50px;height:50px;border-radius:50px}
+.doctor-detail .doctor-detail-wrap .detail-avatar-wrap a{color:#07b8dd;font-size:1rem}
+.doctor-detail .doctor-detail-wrap .info-wrap{-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;font-size:1.417rem}
+.doctor-detail .doctor-detail-wrap .info-title em{display:inline-block;width:14px;height:14px;background:url(../img/yi.png) no-repeat;-webkit-background-size:14px 14px;background-size:14px 14px;vertical-align:-1px;margin-right:5px}
+.doctor-detail .doctor-detail-wrap .info-title a{font-size:1rem;color:#39f;display:inline-block;vertical-align:1px}
+.doctor-detail .doctor-detail-wrap .info-name{font-size:1.417rem;font-weight:700;margin-right:5px}
+.doctor-detail .doctor-detail-wrap .info-job{padding-top:10px;font-size:1.25rem;color:#333}
+.doctor-detail .doctor-detail-wrap .info-hospital{font-size:1.083rem}
+.doctor-detail .doctor-detail-wrap .info-hospital span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:block;padding:10px 0 0}
+.doctor-detail .doctor-detail-wrap .info-pos{font-size:1rem;color:#999;padding:10px 0 0}
+.doctor-detail .doctor-detail-wrap .info-pos em{margin:0 10px;display:inline-block;vertical-align:middle}
+.doctor-detail .doctor-detail-wrap .info-pos .info-pos-text{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:block}
+.doctor-detail .doctor-detail-wrap .info-pos .info-pos-link{font-size:1rem;display:inline-block;vertical-align:middle;text-decoration:none;color:#07b8dd}
+.doctor-detail .appoint-title,.doctor-detail .appoint-empty{height:40px;line-height:40px;font-size:1.25rem;color:#333;padding-left:15px;border-top:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1}
+.doctor-detail .appoint-title .switch{float:right;margin-right:15px}
+.doctor-detail .appoint-title .switch-list,.doctor-detail .appoint-title .switch-calendar{display:none}
+.doctor-detail .appoint-title .switch-list i,.doctor-detail .appoint-title .switch-calendar i{color:#07b8dd}
+.doctor-detail .appoint-title .switch-list i:first-child,.doctor-detail .appoint-title .switch-calendar i:first-child{margin-right:3px;position:relative;top:1px}
+.doctor-detail .appoint-empty{border-bottom:0}
+.doctor-detail .appoint-wrap{border-bottom:1px solid #e1e1e1;background:#fff;margin-bottom:15px}
+.doctor-detail .appoint-wrap .appoint-calendar,.doctor-detail .appoint-wrap .appoint-list{display:none}
+.doctor-detail .appoint-list{color:#333}
+.doctor-detail .appoint-list table{table-layout:fixed;width:100%;border-bottom:1px solid #ececec}
+.doctor-detail .appoint-list table:last-child{border-bottom:0}
+.doctor-detail .appoint-list table tr{border-bottom:1px solid #ececec}
+.doctor-detail .appoint-list table tr td:first-child{text-align:left;width:8.8em;white-space:nowrap;-webkit-box-sizing:border-box;box-sizing:border-box}
+.doctor-detail .appoint-list table tr td:not(:first-child){text-align:center}
+.doctor-detail .appoint-list table tr:last-child{border-bottom:0}
+.doctor-detail .appoint-list thead{background:#f2f2f2;border-bottom:1px solid #ececec;color:#999}
+.doctor-detail .appoint-list thead tr td{height:30px;line-height:30px}
+.doctor-detail .appoint-list thead tr td:first-child{padding-left:2.8em}
+.doctor-detail .appoint-list thead tr td:last-child{padding-right:15px}
+.doctor-detail .appoint-list tbody tr td{height:40px;line-height:40px}
+.doctor-detail .appoint-list tbody tr td a{display:inline-block;width:45px;height:30px;line-height:30px;text-align:center;background:#07b8dd;border-radius:30px;color:#fff;font-size:12px}
+.doctor-detail .appoint-list tbody tr td:first-child{padding-left:15px}
+.doctor-detail .appoint-list tbody tr td:first-child span{color:#999}
+.doctor-detail .appoint-list tbody tr td:last-child{padding-right:15px}
+.doctor-detail .appoint-calendar{padding:15px}
+.doctor-detail .appoint-calendar .icon-calendar{color:#999}
+.doctor-detail .appoint-calendar .calendar-tab{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:100%;margin-bottom:15px}
+.doctor-detail .appoint-calendar .calendar-tab li{display:block;-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;-webkit-tap-highlight-color:none;text-decoration:none;border:1px solid #07b8dd;border-left-width:0;height:28px;line-height:28px;text-align:center;background:#fff}
+.doctor-detail .appoint-calendar .calendar-tab li:first-child{border-left-width:1px;border-top-left-radius:18px;border-bottom-left-radius:18px}
+.doctor-detail .appoint-calendar .calendar-tab li:last-child{border-top-right-radius:18px;border-bottom-right-radius:18px}
+.doctor-detail .appoint-calendar .calendar-tab li.selected{background:#07b8dd;color:#fff;-webkit-background-clip:content-box;background-clip:content-box}
+.doctor-detail .appoint-calendar .calendar-main{font-size:12px}
+.doctor-detail .appoint-calendar .calendar-main table{table-layout:fixed;width:100%;display:none;border:1px solid #ececec;border-width:1px 0 0 1px}
+.doctor-detail .appoint-calendar .calendar-main table thead{background:#f5f5f5}
+.doctor-detail .appoint-calendar .calendar-main table thead th{height:35px;line-height:14px;border:1px solid #ececec;border-width:0 1px 1px 0;text-align:center}
+.doctor-detail .appoint-calendar .calendar-main table thead th span{display:block}
+.doctor-detail .appoint-calendar .calendar-main table tbody td{height:35px;line-height:35px;border:1px solid #ececec;border-width:0 1px 1px 0;text-align:center}
+.doctor-detail .appoint-calendar .calendar-main table tbody td a{display:block;color:#fff;width:100%;height:100%;line-height:18px;background:#07b8dd}
+.doctor-detail .appoint-calendar .calendar-main table tbody td:first-child{color:#999}
+.doctor-detail .appoint-calendar .calendar-main .selected{display:table}
+.doctor-detail .appoint-outer-list .switch-list{display:none}
+.doctor-detail .appoint-outer-list .switch-calendar{display:block}
+.doctor-detail .appoint-outer-list .appoint-list{display:block}
+.doctor-detail .appoint-outer-list .appoint-calendar{display:none}
+.doctor-detail .appoint-outer-calendar .switch-list{display:block}
+.doctor-detail .appoint-outer-calendar .switch-calendar{display:none}
+.doctor-detail .appoint-outer-calendar .appoint-list{display:none}
+.doctor-detail .appoint-outer-calendar .appoint-calendar{display:block}
+.doctor-detail .docter-profile-wrap{padding:15px;margin-bottom:15px;background:#fff;border-top:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1;overflow:auto}
+.doctor-detail .docter-profile-wrap h2{margin-bottom:0;padding-left:10px;font-size:1.25rem;border-left:2px solid #07b8dd;color:#07b8dd}
+.doctor-detail .docter-profile-wrap h3{padding:15px 0 10px;font-size:1.25rem;font-weight:700}
+.doctor-detail .docter-profile-wrap p{font-size:1.25rem;line-height:20px;color:#666}
+.doctor-detail .docter-profile-wrap .goodat{overflow:auto}
+.doctor-detail .docter-profile-wrap .goodat-text{font-size:1.25rem;line-height:20px;color:#666}
+.doctor-detail .docter-profile-wrap .goodat-hidden{display:none}
+.doctor-detail .docter-profile-wrap .exprience p{overflow:hidden}
+.doctor-detail .docter-profile-wrap .exprience-hidden{display:none}
+.doctor-detail .docter-profile-wrap .view-switch{color:#07b8dd;height:20px;line-height:20px;float:right;margin-top:1px;margin-right:5px}
+.doctor-detail .docter-profile-wrap .view-switch>span{display:inline}
+.doctor-detail .docter-profile-wrap .view-switch>span i{display:inline-block;-webkit-transform:scale(0.8);transform:scale(0.8)}
+.doctor-detail .docter-profile-wrap .view-switch-packup>span:first-child{display:inline}
+.doctor-detail .docter-profile-wrap .view-switch-packup>span:last-child{display:none}
+.doctor-detail .docter-profile-wrap .view-switch-expand>span:first-child{display:none}
+.doctor-detail .docter-profile-wrap .view-switch-expand >span:last-child{display:inline}
+.doctor-detail .comment{margin-bottom:15px;background:#fff;border-top:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1}
+.doctor-detail .comment h2{margin:15px 0 0 15px;padding-left:10px;font-size:1.25rem;border-left:2px solid #07b8dd;color:#07b8dd}
+.doctor-detail .comment .more-comment{text-align:center;font-size:15px;color:#333;height:44px;line-height:44px}
+.doctor-detail .download-app{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;background:#fff;padding:9px 15px;border-top:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1;margin-bottom:15px}
+.doctor-detail .download-app>div:nth-child(1){padding:6px 5px 7px 8px;border:1px solid #d4d4d4;border-radius:10px}
+.doctor-detail .download-app>div:nth-child(1) .icon-doctor-plus{font-size:35px}
+.doctor-detail .download-app>div:nth-child(2){padding:4px 0 0 10px;font-size:15px;color:#333;-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;line-height:20px}
+.doctor-detail .download-app>i{display:block;font-size:22px;margin-top:15px}
+.doctor-detail .download-app>em{position:absolute;top:-11px;left:50%;margin-left:-10px;width:20px;height:20px;background:#fff;border-top:1px solid #abdae4;border-right:1px solid #abdae4;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}
+.doctor-detail .download-app em{display:none}
+.reservation-detail .main-content-tip{font-size:1.25rem;color:#f55057;line-height:22px;padding:5px 0;text-align:center;background:#feefb9}
+.reservation-detail .sub-content-tip{font-size:1.25rem;padding:15px;line-height:22px;border-bottom:1px solid #e1e1e1}
+.reservation-detail .sub-content-tip .status-info{position:relative}
+.reservation-detail .sub-content-tip .status-info>div{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.reservation-detail .sub-content-tip .status-info>div span{display:block}
+.reservation-detail .sub-content-tip .status-info>div span:first-child{padding-right:10px;width:4.2em;white-space:nowrap}
+.reservation-detail .sub-content-tip .status-info>div span:last-child{color:#666;-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;word-wrap:break-word;word-break:break-all}
+.reservation-detail .doctor-info{position:relative;background:#fff;border-bottom:1px solid #e1e1e1;padding:15px}
+.reservation-detail .doctor-info p:nth-child(1){margin-bottom:10px}
+.reservation-detail .doctor-info p:nth-child(1) span:first-child{font-size:1.417rem;font-weight:700}
+.reservation-detail .doctor-info p:nth-child(1) em{display:inline-block;width:14px;height:14px;background:url(../img/yi.png) no-repeat;-webkit-background-size:14px 14px;background-size:14px 14px;vertical-align:-1px;margin-left:5px}
+.reservation-detail .doctor-info p:nth-child(1) span:last-child{padding-left:15px;font-size:1.25rem;color:#666}
+.reservation-detail .doctor-info p:nth-child(2){margin-bottom:8px}
+.reservation-detail .doctor-info p:nth-child(2) span:first-child{font-size:1.25rem;max-width:14.5em;padding-right:8px;display:inline-block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.reservation-detail .doctor-info p:nth-child(2) span:last-child{font-size:1.25rem;max-width:5.5em;display:inline-block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.reservation-detail .doctor-info p:nth-child(3){font-size:12px;margin-bottom:15px}
+.reservation-detail .doctor-info p:nth-child(3) span{color:#666}
+.reservation-detail .doctor-info p:nth-child(3) em{margin:0 10px}
+.reservation-detail .doctor-info p:nth-child(3) a{color:#07b8dd}
+.reservation-detail .doctor-info p:nth-child(4){font-size:12px;color:#07b8dd}
+.reservation-detail .doctor-info-invalid::before{content:'';position:absolute;top:0;right:0;bottom:0;left:0;background:#ccc;opacity:.75}
+.reservation-detail .doctor-info-invalid::after{content:'';position:absolute;top:0;right:0;width:46px;height:46px;background:url(../img/invalid.png) no-repeat;-webkit-background-size:46px 46px;background-size:46px 46px}
+.reservation-detail .patient-detail-wrap{border-top:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1;background:#fff;padding:15px;margin-top:15px}
+.reservation-detail .patient-detail-wrap .row{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;line-height:22px}
+.reservation-detail .patient-detail-wrap .title{padding:12px 0;width:78px;white-space:nowrap}
+.reservation-detail .patient-detail-wrap .info{-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;color:#666;padding:12px 0;margin-left:10px;border-bottom:1px solid #ececec;word-wrap:break-word;word-break:break-all}
+.reservation-detail .patient-detail-wrap .symptom-img{border-top:1px solid #fff;border-bottom:1px solid #fff;padding-bottom:0}
+.reservation-detail .patient-detail-wrap .symptom-img>div{margin-right:-15px;margin-bottom:-15px;overflow:hidden}
+.reservation-detail .patient-detail-wrap .symptom-img>div img{float:left;width:50px;height:50px;margin-right:15px;margin-bottom:15px}
+.reservation-detail .comment-btn-wrap{position:absolute;top:0;right:0;width:80px}
+.reservation-detail .comment-btn-wrap a{display:inline-block;color:#fff;font-size:1.25rem;text-align:center;text-decoration:none;background:#07b8dd;border-radius:30px;width:100%;min-width:30px;height:30px;line-height:30px;margin:auto}
+.reservation-detail .modify-btn-wrap{padding:30px 15px 15px}
+.reservation-detail .modify-btn-wrap a{display:inline-block;color:#fff;font-size:1.417rem;text-align:center;text-decoration:none;background:#07b8dd;border-radius:45px;width:100%;min-width:45px;height:45px;line-height:45px;margin:auto}
+.reservation-detail .modify-btn-disabled{padding:0;border-bottom:1px solid #e1e1e1;background:#fff}
+.reservation-detail .modify-btn-disabled .go-to-app{background:0 0;color:#999;font-weight:400}
+.reservation-detail .reserve-again{text-align:center;padding:15px;padding-bottom:0}
+.reservation-detail .reserve-again a{display:inline-block;color:#fff;font-size:1.417rem;text-align:center;text-decoration:none;background:#07b8dd;border-radius:45px;width:100%;min-width:45px;height:45px;line-height:45px;margin:auto}
+.reservation-detail .help{padding:15px;font-size:1rem;text-align:center;color:#666}
+.reservation-detail .help a{color:#07b8dd}
+.profile-comment-list .item-name{color:#909090;font-size:12px}
+.profile-comment-list .border{border-top:1px solid #ececec}
+.profile-comment-list .profile-no-comment div{font-size:94px;color:#d8e0e7;margin-bottom:12px}
+.profile-comment-list .profile-uncomment-list{display:block;text-decoration:none;border-bottom:1px solid #e1e1e1}
+.profile-comment-list .profile-uncomment-list .title{height:40px;line-height:40px;font-size:15px;background-color:#f0f4f7;color:#666;padding-left:15px}
+.profile-comment-list .profile-uncomment-list .title.follow{height:10px}
+.profile-comment-list .profile-uncomment-list .info{height:38px;line-height:38px;font-size:15px;background-color:#fff;border-top:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1;padding-left:15px}
+.profile-comment-list .profile-uncomment-list .info:after,.profile-comment-list .profile-uncomment-list .info:before{content:' ';display:table}
+.profile-comment-list .profile-uncomment-list .info:after{clear:both}
+.profile-comment-list .profile-uncomment-list .info span.name{float:left;color:#999}
+.profile-comment-list .profile-uncomment-list .info span.name i{color:#333}
+.profile-comment-list .profile-uncomment-list .info .status{float:right;margin-right:15px}
+.profile-comment-list .profile-uncomment-list .info .status i{color:#999;display:inline-block;-webkit-transform:rotate(-180deg);transform:rotate(-180deg);margin-left:15px}
+.profile-comment-list .profile-uncomment-list .border{border-top:1px solid #ececec}
+.profile-comment-list .profile-uncomment-list .btn-comment{text-align:center;margin-bottom:10px;background-color:#fff;padding-bottom:15px}
+.profile-comment-list .profile-uncomment-list .btn-comment .goto-comment{display:inline-block;color:#fff;font-size:1.417rem;text-align:center;text-decoration:none;background:#07b8dd;border-radius:45px;width:150px;min-width:45px;height:45px;line-height:45px;margin:auto;position:relative;height:30px;line-height:30px;color:#fff;font-size:15px}
+.profile-comment-list .profile-uncomment-list .btn-comment .activity{background:url(../img/comment-for-ten-fee-v1.png);position:absolute;top:-20px;left:150px;width:67px;height:50px;-webkit-background-size:100% 100%;background-size:100% 100%}
+.profile-comment-list .profile-commented-list{display:block;text-decoration:none;border-bottom:1px solid #e1e1e1}
+.profile-comment-list .profile-commented-list .title{height:40px;line-height:40px;font-size:15px;background-color:#f0f4f7;color:#666;padding-left:15px}
+.profile-comment-list .profile-commented-list .title.follow{height:10px}
+.profile-comment-list .profile-commented-list .info{height:38px;line-height:38px;font-size:15px;background-color:#fff;border-top:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1;padding-left:15px}
+.profile-comment-list .profile-commented-list .info:after,.profile-comment-list .profile-commented-list .info:before{content:' ';display:table}
+.profile-comment-list .profile-commented-list .info:after{clear:both}
+.profile-comment-list .profile-commented-list .info span.name{float:left;color:#999}
+.profile-comment-list .profile-commented-list .info span.name i{color:#333}
+.profile-comment-list .profile-commented-list .info .status{float:right;margin-right:15px}
+.profile-comment-list .profile-commented-list .info .status i{color:#999;display:inline-block;-webkit-transform:rotate(-180deg);transform:rotate(-180deg);margin-left:15px}
+.profile-comment-list .profile-commented-list .rate-info{padding-right:15px;background-color:#fff}
+.profile-comment-list .profile-commented-list .rate-info:after,.profile-comment-list .profile-commented-list .rate-info:before{content:' ';display:table}
+.profile-comment-list .profile-commented-list .rate-info:after{clear:both}
+.profile-comment-list .profile-commented-list .patient-info{margin-top:6px;margin-bottom:6px;margin-left:15px;margin-right:15px;font-size:12px;color:#999}
+.profile-comment-list .profile-commented-list .patient-info:after,.profile-comment-list .profile-commented-list .patient-info:before{content:' ';display:table}
+.profile-comment-list .profile-commented-list .patient-info:after{clear:both}
+.profile-comment-list .profile-commented-list .patient-info .item-name,.profile-comment-list .profile-commented-list .patient-info .item-content{line-height:16px}
+.profile-comment-list .profile-commented-list .patient-info:nth-child(1){margin-top:15px}
+.profile-comment-list .profile-commented-list .patient-time .item-content span{margin-left:10px}
+.profile-comment-list .profile-commented-list .patient-disease{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.profile-comment-list .profile-commented-list .patient-rate-content{margin-top:11px;line-height:23px;margin-bottom:15px;margin-left:15px;color:#333;font-size:15px;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.profile-comment-list .profile-commented-list .patient-comment-rate{margin-top:6px;margin-bottom:6px}
+.profile-comment-list .profile-commented-list .extra-comment{text-align:center;margin-bottom:10px;background-color:#fff;padding-bottom:15px}
+.profile-comment-list .profile-commented-list .extra-comment .goto-comment{display:inline-block;color:#fff;font-size:1.417rem;text-align:center;text-decoration:none;background:#07b8dd;border-radius:45px;width:150px;min-width:45px;height:45px;line-height:45px;margin:auto;height:30px;line-height:30px;color:#fff;font-size:15px}
+.profile-comment-list .btn-comment:last-child{margin-bottom:0}
+.profile-comment-list .first{display:block}
+.profile-comment-list .first:before{content:'';height:15px;border-left:2px solid #07b8dd;margin-right:5px}
+.profile-comment-list .follow{display:block}
+.profile-comment-detail .color-normal{color:#666}
+.profile-comment-detail .slogan{height:40px;line-height:40px;color:#fd6f61;text-align:center;font-size:15px;background-color:#fff2c6}
+.profile-comment-detail .title{line-height:40px;font-size:15px;background-color:#f0f4f7;color:#666;padding-left:15px}
+.profile-comment-detail .title .current{color:#333}
+.profile-comment-detail .title .status{margin-left:10px}
+.profile-comment-detail .title.reason{line-height:40px;font-size:15px;background-color:#f0f4f7;color:#666;padding-left:15px;padding:10px 15px}
+.profile-comment-detail .title.reason .cur-status{height:35px}
+.profile-comment-detail .title.reason .reject-wrap{line-height:26px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.profile-comment-detail .title.reason .reject-wrap .status{-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1}
+.profile-comment-detail .title.reason .current{color:#333}
+.profile-comment-detail .title.reason .status{margin-left:10px}
+.profile-comment-detail .doctor-profile-comment{border-top:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1}
+.profile-comment-detail .treat-info{margin-top:15px;margin-bottom:15px;border-top:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1;background-color:#fff}
+.profile-comment-detail .treat-info:after,.profile-comment-detail .treat-info:before{content:' ';display:table}
+.profile-comment-detail .treat-info:after{clear:both}
+.profile-comment-detail .treat-info .disease{margin-top:15px;margin-left:15px;font-size:15px;color:#999;line-height:25px}
+.profile-comment-detail .treat-info .patient-comment-rate{margin-top:8px;margin-bottom:10px}
+.profile-comment-detail .treat-info .rate-content{margin-top:11px;line-height:23px;margin-bottom:15px;margin-left:15px;margin-right:15px;color:#333;font-size:15px;word-wrap:break-word;word-break:break-all}
+.profile-comment-detail .treat-info .extra-comment{background-color:#f9f9f9;margin-left:15px;margin-right:15px;margin-bottom:15px;font-size:15px}
+.profile-comment-detail .treat-info .extra-comment:after,.profile-comment-detail .treat-info .extra-comment:before{content:' ';display:table}
+.profile-comment-detail .treat-info .extra-comment:after{clear:both}
+.profile-comment-detail .treat-info .extra-comment .info{margin-bottom:10px;margin-top:10px;margin-left:10px}
+.profile-comment-detail .treat-info .extra-comment .content{color:#333;margin-bottom:10px;margin-top:10px;margin-left:10px}
+.profile-comment-detail .treat-info .extra-comment .person{color:#07b8dd}
+.profile-comment-detail .treat-info .extra-comment .time{color:#999;font-size:14px}
+.profile-comment-detail .treat-info .credit-pic{margin-left:15px;margin-bottom:15px;border-top:1px solid #fff;border-bottom:1px solid #fff}
+.profile-comment-detail .treat-info .credit-pic>div{margin-right:-15px;margin-bottom:-15px;overflow:hidden}
+.profile-comment-detail .treat-info .credit-pic>div img{float:left;width:60px;height:60px;margin-right:15px;margin-bottom:15px}
+.profile-comment-detail .extra-comment-btn{text-align:center;margin-bottom:15px;font-size:15px}
+.profile-comment-detail .extra-comment-btn a{display:inline-block;color:#fff;font-size:1.417rem;text-align:center;text-decoration:none;background:#07b8dd;border-radius:45px;width:250px;min-width:45px;height:45px;line-height:45px;margin:auto}
+.profile-comment-append .content{padding:15px}
+.profile-comment-append .comment-textarea{border:1px solid #e1e1e1;background:#fff}
+.profile-comment-append .comment-textarea textarea{height:6em}
+.profile-comment-append .comment-textarea p{padding-right:10px}
+.profile-comment-append .btn-save{margin-top:30px;height:44px;line-height:44px;text-align:center;color:#fff;background:#07b8dd;border-radius:45px;font-size:1.417rem}
+.profile-comment-append .btn-save[data-disabled=true]{color:#7f8990;background:#d8e0e7}
+.profile-account .ctn-no-data .img-wrap{font-size:94px;color:#d8e0e7}
+.profile-account .ctn-user-manage .user-list{background:#fff;border-top:1px solid #ececec}
+.profile-account .ctn-user-manage .user-list .user-item{text-decoration:none;border-bottom:1px solid #ececec;height:45px;line-height:45px;padding:0 15px;display:block}
+.profile-account .ctn-user-manage .user-list .user-item span{text-align:left;display:block;float:left}
+.profile-account .ctn-user-manage .user-list .user-item .item-name{width:30%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.profile-account .ctn-user-manage .user-list .user-item .item-tel{width:60%}
+.profile-account .ctn-user-manage .user-list .user-item .item-go{text-align:right;width:10%}
+.profile-account .ctn-user-manage .user-list .user-item .item-go i{display:inline-block;-webkit-transform:rotate(180deg);transform:rotate(180deg);color:#999}
+.profile-account .ctn-user-manage .user-list .user-item:active{background:#f6f6f6;-webkit-user-select:none;-ms-user-select:none;user-select:none}
+.profile-account .ctn-user-manage .new-user{display:block;margin-top:15px;text-decoration:none;height:45px;line-height:45px;padding:0 15px;border-top:1px solid #ececec;color:#999;background:#fff;color:#999;text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color:transparent}
+.profile-account .ctn-user-manage .new-user:visited,.profile-account .ctn-user-manage .new-user:active{color:#999}
+.profile-account .ctn-user-manage .new-user i{vertical-align:middle;border-radius:1.25rem;padding:4px;border:1px #999 solid}
+.profile-account .ctn-user-manage .new-user span{padding-left:5px;vertical-align:middle}
+.profile-account .ctn-user-manage .load-wrap{height:0;line-height:0;text-align:center;font-size:1.667rem;display:none}
+.profile-account .ctn-user-manage .load-wrap.loading{height:45px;line-height:45px;display:block}
+.profile-account-add .ctn-center .form-wrap{background:#fff}
+.profile-account-add .ctn-center .row{position:relative;padding:5px 15px;height:30px;line-height:30px;border-bottom:1px solid #ececec}
+.profile-account-add .ctn-center .row.row-first{border-top:1px solid #ececec}
+.profile-account-add .ctn-center .row .input-wrap{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;padding:0;width:100%}
+.profile-account-add .ctn-center .row label{display:inline-block;width:70px}
+.profile-account-add .ctn-center .row input{-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;height:30px;border:none;outline:0;padding:0;color:#666}
+.profile-account-add .del-wrap{position:fixed;bottom:10px;width:100%;padding:0 10px;-webkit-box-sizing:border-box;box-sizing:border-box}
+.profile-account-add .del-wrap .del-btn{display:inline-block;color:#fff;font-size:1.417rem;text-align:center;text-decoration:none;background:#f55057;border-radius:45px;width:100%;min-width:45px;height:45px;line-height:45px;margin:auto}
+.profile-account-detail .detail-wrap{border:1px solid #ececec;background:#fff}
+.profile-account-detail .detail-wrap .row{padding:0 15px;border-bottom:1px solid #ececec;height:40px;line-height:40px}
+.profile-account-detail .detail-wrap .row.row-last{border-bottom:none}
+.profile-account-detail .detail-wrap .row.row-name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.profile-account-detail .detail-wrap .title{display:inline-block;width:65px;color:#999}
+.profile-account-detail .del-wrap{position:fixed;bottom:10px;width:100%;padding:0 10px;-webkit-box-sizing:border-box;box-sizing:border-box}
+.profile-account-detail .del-wrap .del-btn{display:inline-block;color:#fff;font-size:1.417rem;text-align:center;text-decoration:none;background:#f55057;border-radius:45px;width:100%;min-width:45px;height:45px;line-height:45px;margin:auto}
+.profile-notice .main-content-tip{font-size:1.25rem;border-bottom:1px solid #e1e1e1}
+.profile-notice .main-content-tip span{color:red;padding:0 5px;font-size:1.25rem}
+.profile-notice .ctn-no-data .img-wrap{font-size:94px;color:#d8e0e7}
+.profile-notice .ctn-notice-manage .notice-list{display:block}
+.profile-notice .ctn-notice-manage .notice-item{padding:10px 15px;display:table;width:100%;-webkit-box-sizing:border-box;box-sizing:border-box;text-decoration:none;border-bottom:1px solid #ececec;background:#fff}
+.profile-notice .ctn-notice-manage .notice-item section:first-child{border-top:1px solid #ececec}
+.profile-notice .ctn-notice-manage .notice-item .item-info{padding-left:20px;position:relative;line-height:1.5;-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1}
+.profile-notice .ctn-notice-manage .notice-item .item-title{font-size:1.25rem}
+.profile-notice .ctn-notice-manage .notice-item .item-title-light{color:#999}
+.profile-notice .ctn-notice-manage .notice-item .item-title-head{color:#07b8dd}
+.profile-notice .ctn-notice-manage .notice-item .item-time{margin-top:5px;color:#999;font-size:1rem}
+.profile-notice .ctn-notice-manage .notice-item .item-go{width:45px;position:relative;font-size:1.5rem;color:#c7c7c7;display:table-cell;vertical-align:middle;text-align:right}
+.profile-notice .ctn-notice-manage .notice-item .item-go i{height:16px;display:inline-block;-webkit-transform:rotate(180deg);transform:rotate(180deg)}
+.profile-notice .ctn-notice-manage .notice-item .unread-icon{position:absolute;top:4px;left:0;font-size:1rem;color:#07b8dd}
+.profile-notice .ctn-notice-manage .notice-item:active{background:#f6f6f6;-webkit-user-select:none;-ms-user-select:none;user-select:none}
+.profile-reservation .ctn-no-data .img-wrap{font-size:94px;color:#d8e0e7}
+.profile-reservation .ctn-reserv-manage .reserv-list{display:block}
+.profile-reservation .ctn-reserv-manage .reserv-vis{padding:13px 15px;margin-top:-15px}
+.profile-reservation .ctn-reserv-manage .reserv-vis:first-child{margin-top:0}
+.profile-reservation .ctn-reserv-manage .reserv-vis h2{line-height:15px;font-size:1.25rem;padding-left:8px;border-left:2px solid #07b8dd}
+.profile-reservation .reserv-item{display:block;border-top:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1;margin-bottom:15px;background:#fff}
+.profile-reservation .reserv-item .item-info{padding:0 15px;line-height:40px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;font-size:1.25rem;background:#fff;border-bottom:1px solid #ececec}
+.profile-reservation .reserv-item .item-tip{padding-right:15px;color:#999}
+.profile-reservation .reserv-item .item-name{font-weight:blod;-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1}
+.profile-reservation .reserv-item i{display:inline-block;color:#c7c7c7;height:16px;-webkit-transform:rotate(180deg);transform:rotate(180deg);padding-right:15px}
+.profile-reservation .reserv-item .item-footer{text-align:center;padding-bottom:15px}
+.profile-reservation .reserv-item .item-footer a{position:relative;height:30px;line-height:30px;padding:0 20px;font-size:15px;background:#07b8dd;color:#fff;display:inline-block;border-radius:30px}
+.profile-reservation .reserv-item .item-footer .ten-fee-icon{display:block;width:68px;height:50px;background:url(../img/comment-for-ten-fee-v1.png);-webkit-background-size:100% 100%;background-size:100% 100%;position:absolute;top:-25px;right:-68px}
+.profile-reservation .reserv-item .item-footer-multi{padding-top:15px}
+.profile-reservation .reserv-item .item-footer-multi .go-to-app{background:0 0;color:#999}
+.profile-reservation .doctor-info-multi{margin:0 15px;padding:15px 0;border-bottom:1px solid #e1e1e1}
+.profile-reservation .doctor-info-multi:last-child{border-bottom:0}
+.profile-reservation .doctor-info-multi>div:first-child{float:left;margin-right:10px;width:84px;overflow:hidden}
+.profile-reservation .doctor-info-multi>div:first-child span{display:inline-block;max-width:3.6em;font-size:1.417rem;font-weight:700;line-height:20px}
+.profile-reservation .doctor-info-multi>div:first-child em{display:inline-block;width:14px;height:14px;background:url(../img/yi.png) no-repeat;-webkit-background-size:14px 14px;background-size:14px 14px;vertical-align:-1px;vertical-align:top;margin-left:5px;margin-top:2px}
+.profile-reservation .doctor-info-multi>div:last-child{overflow:hidden}
+.profile-reservation .doctor-info-multi>div:last-child p:first-child{font-size:1.167rem;max-width:14.5em;padding-right:8px;display:inline-block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-bottom:12px}
+.profile-reservation .doctor-info-multi>div:last-child p:last-child{font-size:12px}
+.profile-reservation .doctor-info-single{padding:15px}
+.profile-reservation .doctor-info-single p:nth-child(1){margin-bottom:10px}
+.profile-reservation .doctor-info-single p:nth-child(1) span:first-child{font-size:1.417rem;font-weight:700}
+.profile-reservation .doctor-info-single p:nth-child(1) em{display:inline-block;width:14px;height:14px;background:url(../img/yi.png) no-repeat;-webkit-background-size:14px 14px;background-size:14px 14px;vertical-align:-1px;margin-left:5px}
+.profile-reservation .doctor-info-single p:nth-child(1) span:last-child{padding-left:15px;font-size:1.25rem;color:#666}
+.profile-reservation .doctor-info-single p:nth-child(2){margin-bottom:8px}
+.profile-reservation .doctor-info-single p:nth-child(2) span:first-child{font-size:1.167rem;max-width:14.5em;padding-right:8px;display:inline-block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.profile-reservation .doctor-info-single p:nth-child(2) span:last-child{font-size:1.167rem;max-width:5.5em;display:inline-block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.profile-reservation .doctor-info-single p:nth-child(3){font-size:12px}
+.profile-reservation-detail .main-content-tip{font-size:1.25rem;color:#f55057;line-height:22px;padding:5px 0;text-align:center;background:#feefb9}
+.profile-reservation-detail .sub-content-tip{font-size:1.25rem;padding:15px;line-height:22px;border-bottom:1px solid #e1e1e1}
+.profile-reservation-detail .sub-content-tip .status-info{position:relative}
+.profile-reservation-detail .sub-content-tip .status-info>div{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.profile-reservation-detail .sub-content-tip .status-info>div span{display:block}
+.profile-reservation-detail .sub-content-tip .status-info>div span:first-child{padding-right:10px;width:4.2em;white-space:nowrap}
+.profile-reservation-detail .sub-content-tip .status-info>div span:last-child{color:#666;-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;word-wrap:break-word;word-break:break-all}
+.profile-reservation-detail .doctor-info{position:relative;background:#fff;border-bottom:1px solid #e1e1e1;padding:15px}
+.profile-reservation-detail .doctor-info p:nth-child(1){margin-bottom:10px}
+.profile-reservation-detail .doctor-info p:nth-child(1) span:first-child{font-size:1.417rem;font-weight:700}
+.profile-reservation-detail .doctor-info p:nth-child(1) em{display:inline-block;width:14px;height:14px;background:url(../img/yi.png) no-repeat;-webkit-background-size:14px 14px;background-size:14px 14px;vertical-align:-1px;margin-left:5px}
+.profile-reservation-detail .doctor-info p:nth-child(1) span:last-child{padding-left:15px;font-size:1.25rem;color:#666}
+.profile-reservation-detail .doctor-info p:nth-child(2){margin-bottom:8px}
+.profile-reservation-detail .doctor-info p:nth-child(2) span:first-child{font-size:1.25rem;max-width:14.5em;padding-right:8px;display:inline-block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.profile-reservation-detail .doctor-info p:nth-child(2) span:last-child{font-size:1.25rem;max-width:5.5em;display:inline-block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.profile-reservation-detail .doctor-info p:nth-child(3){font-size:12px;margin-bottom:15px}
+.profile-reservation-detail .doctor-info p:nth-child(3) span{color:#666}
+.profile-reservation-detail .doctor-info p:nth-child(3) em{margin:0 10px}
+.profile-reservation-detail .doctor-info p:nth-child(3) a{color:#07b8dd}
+.profile-reservation-detail .doctor-info p:nth-child(4){font-size:12px;color:#07b8dd}
+.profile-reservation-detail .doctor-info-invalid::before{content:'';position:absolute;top:0;right:0;bottom:0;left:0;background:#ccc;opacity:.75}
+.profile-reservation-detail .doctor-info-invalid::after{content:'';position:absolute;top:0;right:0;width:46px;height:46px;background:url(../img/invalid.png) no-repeat;-webkit-background-size:46px 46px;background-size:46px 46px}
+.profile-reservation-detail .patient-detail-wrap{border-top:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1;background:#fff;padding:15px;margin-top:15px}
+.profile-reservation-detail .patient-detail-wrap .row{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;line-height:22px}
+.profile-reservation-detail .patient-detail-wrap .title{padding:12px 0;width:78px;white-space:nowrap}
+.profile-reservation-detail .patient-detail-wrap .info{-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;color:#666;padding:12px 0;margin-left:10px;border-bottom:1px solid #ececec;word-wrap:break-word;word-break:break-all}
+.profile-reservation-detail .patient-detail-wrap .symptom-img{border-top:1px solid #fff;border-bottom:1px solid #fff;padding-bottom:0}
+.profile-reservation-detail .patient-detail-wrap .symptom-img>div{margin-right:-15px;margin-bottom:-15px;overflow:hidden}
+.profile-reservation-detail .patient-detail-wrap .symptom-img>div img{float:left;width:50px;height:50px;margin-right:15px;margin-bottom:15px}
+.profile-reservation-detail .comment-btn-wrap{position:absolute;top:0;right:0;width:80px}
+.profile-reservation-detail .comment-btn-wrap a{display:inline-block;color:#fff;font-size:1.25rem;text-align:center;text-decoration:none;background:#07b8dd;border-radius:30px;width:100%;min-width:30px;height:30px;line-height:30px;margin:auto}
+.profile-reservation-detail .modify-btn-wrap{padding:30px 15px 15px}
+.profile-reservation-detail .modify-btn-wrap a{display:inline-block;color:#fff;font-size:1.417rem;text-align:center;text-decoration:none;background:#07b8dd;border-radius:45px;width:100%;min-width:45px;height:45px;line-height:45px;margin:auto}
+.profile-reservation-detail .modify-btn-disabled{padding:0;border-bottom:1px solid #e1e1e1;background:#fff}
+.profile-reservation-detail .modify-btn-disabled .go-to-app{background:0 0;color:#999;font-weight:400}
+.profile-reservation-detail .reserve-again{text-align:center;padding:15px;padding-bottom:0}
+.profile-reservation-detail .reserve-again a{display:inline-block;color:#fff;font-size:1.417rem;text-align:center;text-decoration:none;background:#07b8dd;border-radius:45px;width:100%;min-width:45px;height:45px;line-height:45px;margin:auto}
+.profile-reservation-detail .help{padding:15px;font-size:1rem;text-align:center;color:#666}
+.profile-reservation-detail .help a{color:#07b8dd}
+.profile-reservation-detail .reservation-overdue{margin-top:80px;text-align:center}
+.profile-reservation-detail .reservation-overdue i{font-size:100px;color:#d8e0e7}
+.profile-reservation-detail .reservation-overdue span{font-size:15px;color:#999;display:block;margin-top:15px}
+.profile-reservation-evaluate .container{font-size:1.25rem}
+.profile-reservation-evaluate .doctor-profile-comment{border-bottom:1px solid #e1e1e1}
+.profile-reservation-evaluate h5{height:3.333rem;line-height:3.333rem;text-indent:1.25rem;color:#666;position:relative}
+.profile-reservation-evaluate .block{background:#fff;border:1px solid #e1e1e1;border-width:1px 0}
+.profile-reservation-evaluate .diseases{padding:.417rem .833rem;line-height:2}
+.profile-reservation-evaluate .diseases:after,.profile-reservation-evaluate .diseases:before{content:' ';display:table}
+.profile-reservation-evaluate .diseases:after{clear:both}
+.profile-reservation-evaluate .diseases span{display:inline-block;margin:.417rem;padding:0 1.25rem;border:1px solid #cfdbe5;border-radius:1.25rem;background:#f7f9fa;color:#666}
+.profile-reservation-evaluate .diseases span.selected{color:#fff;background:#07b8dd;border:1px solid #07b8dd}
+.profile-reservation-evaluate .diseases .disease-extra{display:none}
+.profile-reservation-evaluate .diseases .disease-op{float:right;padding:.417rem 0;color:#07b8dd;margin-right:5px}
+.profile-reservation-evaluate .diseases .disease-op i{-webkit-transform:scale(0.6);transform:scale(0.6);display:inline-block}
+.profile-reservation-evaluate .diseases .disease-op i::before{content:'\37'}
+.profile-reservation-evaluate .diseases-all .disease-extra{display:inline-block}
+.profile-reservation-evaluate .diseases-all .disease-op i::before{content:'\38'}
+.profile-reservation-evaluate .evaluation{margin-top:1.25rem;padding:1.25rem}
+.profile-reservation-evaluate .evaluation-title{height:auto;margin-top:-p5;line-height:2.083rem;text-indent:2px;color:#07b8dd;margin-bottom:11px}
+.profile-reservation-evaluate .evaluation-desc{border:1px solid #e1e1e1;padding:10px;margin-bottom:15px}
+.profile-reservation-evaluate .evaluation-desc>p:first-child{margin-bottom:3px}
+.profile-reservation-evaluate .evaluation .fileupload-group .fileupload-tip{top:0}
+.profile-reservation-evaluate .ling-ten-fee{position:absolute;top:10px;left:80px;width:79px;height:19px;background:url(../img/ling-ten-fee-v1.png) no-repeat;-webkit-background-size:79px 19px;background-size:79px 19px}
+.profile-reservation-evaluate .phone{display:block;padding:0 1.25rem;height:3.667rem;line-height:3.667rem;border:1px solid color-border;background:#fff;color:#333}
+.profile-reservation-evaluate .phone span{float:right;margin-top:1px;color:#666}
+.profile-reservation-evaluate .submit{display:block;margin:2.5rem auto 1.667rem;border:0;border-radius:3.75rem;width:24.167rem;height:3.75rem;line-height:3.333rem;background:#07b8dd;color:#fff}
+.profile-reservation-evaluate .submit.disabled{background:#d8e0e7;color:#7f8990}
+.profile-reservation-evaluate .submit:focus{outline:0}
+.doctor-reserve .reserve-with-account .account-edit{display:none}
+.doctor-reserve .reserve-with-account .account-more{height:44px;line-height:44px;text-align:center;color:#999;background:#f9f9f9;border-bottom:1px solid #ececec;color:#07b8dd}
+.doctor-reserve .reserve-with-account .account-more i{display:inline-block;-webkit-transform:scale(0.6);transform:scale(0.6);margin-left:3px}
+.doctor-reserve .reserve-with-account .account,.doctor-reserve .reserve-with-account .account-new{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;padding:11px 0 11px 15px;border-bottom:1px solid #ececec}
+.doctor-reserve .reserve-with-account .account .account-radio,.doctor-reserve .reserve-with-account .account-new .account-radio{width:22px;height:22px;line-height:24px;text-align:center;border-radius:22px;border:1px solid #c2c2c2;background:#fff;margin-right:14px;display:block}
+.doctor-reserve .reserve-with-account .account .account-radio .icon-check,.doctor-reserve .reserve-with-account .account-new .account-radio .icon-check{display:none}
+.doctor-reserve .reserve-with-account .account .account-radio .icon-plus,.doctor-reserve .reserve-with-account .account-new .account-radio .icon-plus{color:#c2c2c2;font-weight:700;display:inline}
+.doctor-reserve .reserve-with-account .account .account-init,.doctor-reserve .reserve-with-account .account-new .account-init,.doctor-reserve .reserve-with-account .account .account-edit,.doctor-reserve .reserve-with-account .account-new .account-edit{-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1}
+.doctor-reserve .reserve-with-account .account .account-init p:first-child,.doctor-reserve .reserve-with-account .account .account-edit p:first-child{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;height:24px;line-height:24px}
+.doctor-reserve .reserve-with-account .account .account-init p:first-child span:first-child,.doctor-reserve .reserve-with-account .account .account-edit p:first-child span:first-child{display:inline-block;width:5em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-right:2em}
+.doctor-reserve .reserve-with-account .account .account-init p:first-child span:last-child,.doctor-reserve .reserve-with-account .account .account-edit p:first-child span:last-child,.doctor-reserve .reserve-with-account .account .account-init p:first-child input:last-child,.doctor-reserve .reserve-with-account .account .account-edit p:first-child input:last-child{-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1}
+.doctor-reserve .reserve-with-account .account .account-edit p:first-child{padding-bottom:12px;border-bottom:1px solid #ececec}
+.doctor-reserve .reserve-with-account .account .account-edit .captcha{padding-right:15px}
+.doctor-reserve .reserve-with-account .account .account-edit .visitCard{padding:15px 0;border-top:1px solid #ececec}
+.doctor-reserve .reserve-with-account .account-new{border-bottom:0}
+.doctor-reserve .reserve-with-account .account-new .account-init{height:24px;line-height:24px;color:#999}
+.doctor-reserve .reserve-with-account .account-new .account-edit .reserve-form{position:relative;top:-11px}
+.doctor-reserve .reserve-with-account .account-new .account-edit .reserve-form>p{padding-left:0}
+.doctor-reserve .reserve-with-account .account-active{padding-bottom:0}
+.doctor-reserve .reserve-with-account .account-active .account-radio{background:#07b8dd;border-color:#07b8dd}
+.doctor-reserve .reserve-with-account .account-active .account-radio .icon-check{color:#fff;display:inline}
+.doctor-reserve .reserve-with-account .account-active .account-radio .icon-plus{display:none}
+.doctor-reserve .reserve-with-account .account-active .account-init{display:none}
+.doctor-reserve .reserve-with-account .account-active .account-edit{display:block}
+.doctor-reserve .reserve-activity{padding-bottom:60px;text-align:center;font-size:1.2em;margin-top:-50px;display:block}
+.doctor-reserve .reserve-activity>span{color:#17aad5}
+.doctor-reserve .reserver-time-list{padding:10px 2%;background-color:#fff}
+.doctor-reserve .reserver-time-list>span{display:inline-block;width:47%;text-align:center;font-size:1.2em;height:30px;line-height:30px;border:1px solid #e1e1e1;margin:4px 1%;position:relative}
+.doctor-reserve .reserver-time-list>span>i{background:url(../img/icon-actived.png) no-repeat 0 0;-webkit-background-size:100% 100%;background-size:100% 100%;position:absolute;top:3px;left:3px;width:12px;height:12px;display:none}
+.doctor-reserve .reserver-time-list >.active{border:1px solid #07b8dd;color:#07b8dd}
+.doctor-reserve .reserver-time-list >.active>i{display:inline-block}
+.doctor-reserve .reserver-time-list >.more >.ico{margin-left:3px;font-size:12px}
+.doctor-reserve .reserver-time-list >.more-close >.ico{margin-left:3px;font-size:12px}
+.doctor-reserve .reserve-textarea>p{display:none}
+.doctor-reserve .reserve-textarea>.widget-textarea-wrap{min-height:50px}
+.doctor-reserve .reserve-textarea>.widget-textarea-wrap>textarea{height:50px}
+.doctor-reserve .reserve-success{padding:15px}
+.doctor-reserve .reserve-success>div:first-child{background:url(../img/reserve-success.png) no-repeat 0 0;-webkit-background-size:94px 95px;background-size:94px 95px;width:94px;height:95px;margin:0 auto;margin-top:65px;margin-bottom:18px}
+.doctor-reserve .reserve-success>div:nth-child(2){line-height:23px;text-align:center;color:#333;margin-bottom:20px}
+.doctor-reserve .reserve-success>div:nth-child(2) p:first-child{font-size:17px;font-weight:700;padding-left:15px}
+.doctor-reserve .reserve-success>div:nth-child(2) p:last-child{font-size:12px}
+.doctor-reserve .reserve-success .download-app{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;background:#fff;padding:9px 15px;border:1px solid #abdae4;border-radius:8px;margin-bottom:40px}
+.doctor-reserve .reserve-success .download-app>div:nth-child(1){padding:6px 5px 7px 8px;border:1px solid #d4d4d4;border-radius:10px}
+.doctor-reserve .reserve-success .download-app>div:nth-child(1) .icon-doctor-plus{font-size:35px}
+.doctor-reserve .reserve-success .download-app>div:nth-child(2){padding:4px 0 0 10px;font-size:15px;color:#333;-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;line-height:20px}
+.doctor-reserve .reserve-success .download-app>i{display:block;font-size:22px;margin-top:15px}
+.doctor-reserve .reserve-success .download-app>em{position:absolute;top:-11px;left:50%;margin-left:-10px;width:20px;height:20px;background:#fff;border-top:1px solid #abdae4;border-right:1px solid #abdae4;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}
+.doctor-reserve .reserve-success>p:nth-last-child(3){line-height:18px;font-size:14px;margin-bottom:13px;text-align:center}
+.doctor-reserve .reserve-success>p:nth-last-child(3) em{color:#07b8dd;position:relative}
+.doctor-reserve .reserve-success>p:nth-last-child(3) em span{width:50px;height:40px;position:absolute;right:-50px;bottom:0;background:url(../img/ten-fee.png) no-repeat;-webkit-background-size:50px 40px;background-size:50px 40px}
+.doctor-reserve .reserve-success>p:nth-last-child(2){margin-bottom:100px}
+.doctor-reserve .reserve-success>p:nth-last-child(2) a{display:block;color:#fff;background:#07b8dd;font-size:17px;line-height:30px;padding:7px 0;text-align:center;border-radius:20px}
+.doctor-reserve .reserve-success>p:last-child{line-height:21px;color:#666;text-align:center}
+.doctor-reserve .reserve-success>p:last-child a{color:#07b8dd}
+.doctor-reserve .succ-sports{width:100%;min-height:120px;padding:0;position:fixed;bottom:-5px;background:url(../img/sports-footer.png) no-repeat bottom center;-webkit-background-size:100% 100%;background-size:100%}
+.doctor-reserve .account .reserve-instant-state{position:relative;float:right;bottom:18px;padding-right:30px}
+.doctor-reserve .account .reserve-instant-state .instant-state-icon{display:inline-block;margin-right:5px;position:relative;top:1px}
+.doctor-reserve .account .reserve-instant-state .instant-tip{color:#ee615b;font-size:15px}
+.hospital-list .loading-tip{padding-top:0}
+.hospital-list h2{font-size:15px;padding:8px 15px}
+.hospital-list h2 em{color:red}
+.hospital-list .hospital{margin-bottom:15px;border-top:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1;background:#fff;padding:15px}
+.hospital-list .hospital>a>h3,.hospital-list .hospital>a>p:nth-child(2){font-size:15px;line-height:17px;margin-bottom:8px}
+.hospital-list .hospital>a>h3{font-weight:700}
+.hospital-list .hospital>a>p:nth-child(2) span:first-child{margin-right:16px}
+.hospital-list .hospital>a>p:nth-child(3){border-bottom:1px solid #e1e1e1;margin-bottom:15px;font-size:12px;line-height:14px;padding-bottom:15px;color:#666}
+.hospital-list .hospital .doctors>p{overflow:hidden;margin-bottom:15px}
+.hospital-list .hospital .doctors>p span{float:left}
+.hospital-list .hospital .doctors>p span em{color:red}
+.hospital-list .hospital .doctors>p a{float:right;color:#07b8dd}
+.hospital-list .hospital .doctors>ul{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.hospital-list .hospital .doctors>ul li{-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;text-align:center}
+.hospital-list .hospital .doctors>ul p:first-child{margin:0 auto 8px;width:50px;height:50px;border-radius:50px;overflow:hidden;border:1px solid #ddd}
+.hospital-list .hospital .doctors>ul p:first-child img{width:50px;height:50px;border-radius:50px}
+.hospital-list .hospital .doctors>ul p:nth-child(2){font-size:15px;font-weight:700;margin-bottom:10px}
+.hospital-list .hospital .doctors>ul p:nth-child(3){margin-bottom:10px;color:#666}
+.hospital-list .hospital .doctors>ul p:last-child span{display:inline-block;font-size:15px;color:#fff;background:#07b8dd;width:72px;height:30px;line-height:30px;text-align:center;border-radius:36px}
+.hospital-list section:last-child .hospital:last-child{margin-bottom:0;border-bottom:0}
+.comment-detail .color-normal{color:#666}
+.comment-detail .slogan{height:40px;line-height:40px;color:#fd6f61;text-align:center;font-size:15px;background-color:#fff2c6}
+.comment-detail .title{line-height:40px;font-size:15px;background-color:#f0f4f7;color:#666;padding-left:15px}
+.comment-detail .title .current{color:#333}
+.comment-detail .title .status{margin-left:10px}
+.comment-detail .title.reason{line-height:40px;font-size:15px;background-color:#f0f4f7;color:#666;padding-left:15px;padding:10px 15px}
+.comment-detail .title.reason .cur-status{height:35px}
+.comment-detail .title.reason .reject-wrap{line-height:26px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.comment-detail .title.reason .reject-wrap .status{-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1}
+.comment-detail .title.reason .current{color:#333}
+.comment-detail .title.reason .status{margin-left:10px}
+.comment-detail .doctor-profile-comment{border-top:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1}
+.comment-detail .treat-info{margin-top:15px;margin-bottom:15px;border-top:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1;background-color:#fff}
+.comment-detail .treat-info:after,.comment-detail .treat-info:before{content:' ';display:table}
+.comment-detail .treat-info:after{clear:both}
+.comment-detail .treat-info .disease{margin-top:15px;margin-left:15px;font-size:15px;color:#999;line-height:25px}
+.comment-detail .treat-info .patient-comment-rate{margin-top:8px;margin-bottom:10px}
+.comment-detail .treat-info .rate-content{margin-top:11px;line-height:23px;margin-bottom:15px;margin-left:15px;margin-right:15px;color:#333;font-size:15px;word-wrap:break-word;word-break:break-all}
+.comment-detail .treat-info .extra-comment{background-color:#f9f9f9;margin-left:15px;margin-right:15px;margin-bottom:15px;font-size:15px}
+.comment-detail .treat-info .extra-comment:after,.comment-detail .treat-info .extra-comment:before{content:' ';display:table}
+.comment-detail .treat-info .extra-comment:after{clear:both}
+.comment-detail .treat-info .extra-comment .info{margin-bottom:10px;margin-top:10px;margin-left:10px}
+.comment-detail .treat-info .extra-comment .content{color:#333;margin-bottom:10px;margin-top:10px;margin-left:10px}
+.comment-detail .treat-info .extra-comment .person{color:#07b8dd}
+.comment-detail .treat-info .extra-comment .time{color:#999;font-size:14px}
+.comment-detail .treat-info .credit-pic{margin-left:15px;margin-bottom:15px;border-top:1px solid #fff;border-bottom:1px solid #fff}
+.comment-detail .treat-info .credit-pic>div{margin-right:-15px;margin-bottom:-15px;overflow:hidden}
+.comment-detail .treat-info .credit-pic>div img{float:left;width:60px;height:60px;margin-right:15px;margin-bottom:15px}
+.comment-detail .extra-comment-btn{text-align:center;margin-bottom:15px;font-size:15px}
+.comment-detail .extra-comment-btn a{display:inline-block;color:#fff;font-size:1.417rem;text-align:center;text-decoration:none;background:#07b8dd;border-radius:45px;width:250px;min-width:45px;height:45px;line-height:45px;margin:auto}
+.doctor-certificate .nav-content{background:#07b8dd;height:153px;position:absolute;left:0;right:0}
+.doctor-certificate .nav-content .certify-logo{background:#fff;width:90px;height:90px;border-radius:70px;margin:0 auto;padding:10px 0 0 15px;position:relative}
+.doctor-certificate .nav-content .certify-logo .icon-certify-doctor{font-size:70px}
+.doctor-certificate .nav-content .certify-logo .certify-verify{position:absolute;top:76px;right:4px;background:#26b8e8;border-radius:50%;line-height:normal;border:3px solid #26b8e8;width:18px;height:18px}
+.doctor-certificate .nav-content .certify-logo .certify-verify em{display:inline-block;width:14px;height:14px;background:url(../img/yi.png) no-repeat;-webkit-background-size:14px 14px;background-size:14px 14px;vertical-align:-1px;border:2px solid #fff;border-radius:14px}
+.doctor-certificate .nav-content .certify-slogan{font-weight:700;font-size:20px}
+.doctor-certificate .identity-list{margin-top:150px}
+.doctor-certificate .identity-list li{background:#fff;height:80px;line-height:80px;border-bottom:1px solid #f0f0f0;padding-left:25px;padding-right:15px}
+.doctor-certificate .identity-list li .icon-certified,.doctor-certificate .identity-list li .icon-certify-doctor,.doctor-certificate .identity-list li .icon-hospital-depart{font-weight:400;margin-top:20px;float:left;font-size:45px}
+.doctor-certificate .identity-list li .icon-verified{margin-top:25px;font-size:30px;float:right}
+.doctor-certificate .identity-list li .des{float:left;padding-left:20px;text-align:left}
+.doctor-certificate .identity-list li .des .title{margin-top:20px;height:20px;line-height:20px;color:#333;font-size:15px}
+.doctor-certificate .identity-list li .des .desc{height:15px;line-height:15px;font-size:12px;color:#999;padding-top:7px}
+.doctor-comment .content{background:#fff}
+.recommend-list .loading-tip{padding-top:0}
+.recommend-list h2{font-size:15px;padding:14px 15px 12px;color:#666}
+.recommend-list .recommend{margin-bottom:10px;border-top:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1;background:#fff;padding:12px}
+.recommend-list .recommend .recommend-info{overflow:hidden;zoom:100%;position:relative}
+.recommend-list .recommend .recommend-info .hospital-icon{float:left}
+.recommend-list .recommend .recommend-info .hospital-icon .hospital-img{width:65px}
+.recommend-list .recommend .recommend-info .hospital-icon .hospital-star{position:absolute;bottom:3px}
+.recommend-list .recommend .recommend-info .hospital-icon .hospital-star i{width:12px;height:11px;float:left;padding-right:1px}
+.recommend-list .recommend .recommend-info .hospital-icon .hospital-star .light{background:url(../img/star-light.png) no-repeat}
+.recommend-list .recommend .recommend-info .hospital-icon .hospital-star .dark{background:url(../img/star-dark.png) no-repeat}
+.recommend-list .recommend .recommend-info .hospital-icon .hospital-star .helf{background:url(../img/star-helf.png) no-repeat}
+.recommend-list .recommend .recommend-info .hospital-info{margin-left:80px}
+.recommend-list .recommend .recommend-info .hospital-info>h3,.recommend-list .recommend .recommend-info .hospital-info>p:nth-child(2){font-size:15px;margin-bottom:9px}
+.recommend-list .recommend .recommend-info .hospital-info>h3{font-weight:700;coler:#333}
+.recommend-list .recommend .recommend-info .hospital-info>p:nth-child(2){font-size:13px}
+.recommend-list .recommend .recommend-info .hospital-info>p:nth-child(2) span{color:#666}
+.recommend-list .recommend .recommend-info .hospital-info>p:nth-child(2) span:first-child{margin-right:16px;font-size:13px}
+.recommend-list .recommend .recommend-info .hospital-info>p:nth-child(3){border-bottom:1px solid #d6e1e9;margin-bottom:10px;font-size:13px;padding-bottom:15px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#666}
+.recommend-list .recommend .recommend-info .hospital-info>p:nth-child(4){color:#07b8dd}
+.recommend-list .recommend .recommend-info .hospital-info>p:nth-child(4) span:nth-child(1){float:left;font-size:13px}
+.recommend-list .recommend .recommend-info .hospital-info>p:nth-child(4) span:nth-child(2){float:right;font-size:13px}
+.hospital-search-list .loading-tip{padding-top:0}
+.hospital-search-list h2{font-size:15px;padding:14px 15px 12px;color:#666}
+.hospital-search-list .operator-container{background:#f0f4f7;height:45px;line-height:45px;padding:0 15px;font-size:15px}
+.hospital-search-list .operator-container .gray,.hospital-search-list .operator-container .right{margin-right:10px}
+.hospital-search-list .operator-container .region-info{font-size:16px;color:#333}
+.hospital-search-list .operator-container .hide{display:none}
+.hospital-search-list .operator-container .img-loading{margin-left:3px}
+.hospital-search-list .operator-container .icon-arrow{-webkit-transform:rotate(180deg);transform:rotate(180deg);color:#d9e1e8;font-size:20px;height:44px;line-height:44px;float:right}
+.hospital-search-list .right{float:right}
+.hospital-search-list .blue{color:#26c0e0}
+.hospital-search-list .gray{color:#999}
+.hospital-search-list .recommend{margin-bottom:10px;border-top:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1;background:#fff;padding:12px}
+.hospital-search-list .recommend .recommend-info{overflow:hidden;zoom:100%;position:relative}
+.hospital-search-list .recommend .recommend-info .hospital-icon{float:left}
+.hospital-search-list .recommend .recommend-info .hospital-icon .hospital-img{width:65px}
+.hospital-search-list .recommend .recommend-info .hospital-icon .hospital-star{position:absolute;bottom:3px}
+.hospital-search-list .recommend .recommend-info .hospital-icon .hospital-star i{width:12px;height:11px;float:left;padding-right:1px}
+.hospital-search-list .recommend .recommend-info .hospital-icon .hospital-star .light{background:url(../img/star-light.png) no-repeat}
+.hospital-search-list .recommend .recommend-info .hospital-icon .hospital-star .dark{background:url(../img/star-dark.png) no-repeat}
+.hospital-search-list .recommend .recommend-info .hospital-icon .hospital-star .helf{background:url(../img/star-helf.png) no-repeat}
+.hospital-search-list .recommend .recommend-info .hospital-info{margin-left:80px}
+.hospital-search-list .recommend .recommend-info .hospital-info>h3,.hospital-search-list .recommend .recommend-info .hospital-info>p:nth-child(2){font-size:15px;margin-bottom:9px}
+.hospital-search-list .recommend .recommend-info .hospital-info>h3{font-weight:700;coler:#333}
+.hospital-search-list .recommend .recommend-info .hospital-info>p:nth-child(2){font-size:13px}
+.hospital-search-list .recommend .recommend-info .hospital-info>p:nth-child(2) span{color:#666}
+.hospital-search-list .recommend .recommend-info .hospital-info>p:nth-child(2) span:first-child{margin-right:16px;font-size:13px}
+.hospital-search-list .recommend .recommend-info .hospital-info>p:nth-child(3){border-bottom:1px solid #d6e1e9;margin-bottom:10px;font-size:13px;padding-bottom:15px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#666}
+.hospital-search-list .recommend .recommend-info .hospital-info>p:nth-child(4){color:#07b8dd}
+.hospital-search-list .recommend .recommend-info .hospital-info>p:nth-child(4) span:nth-child(1){float:left;font-size:13px}
+.hospital-search-list .recommend .recommend-info .hospital-info>p:nth-child(4) span:nth-child(2){float:right;font-size:13px}
+.hospital-search-list-region .current-region{font-size:1.25rem;display:block;height:44px;line-height:44px;border-bottom:1px solid #ececec;padding-left:15px}
+.hospital-search-list-region .current-region .label{color:#999}
+.hospital-search-list-region .current-region span{color:#333}
+.hospital-search-list-region .region-panel{position:fixed;top:89px;bottom:0;left:0;right:0;overflow:hidden}
