@@ -7,7 +7,7 @@ import com.mysql.jdbc.Connection;
 import com.mysql.jdbc.PreparedStatement;
 
 public class ConnectDatabase {
-	public final static String URL = "jdbc:mysql://localhost:3306/info?characterEncoding=utf8&user=root&password=yue642969318";
+	public final static String URL = "jdbc:mysql://localhost:3306/info?characterEncoding=utf8&user=root&password=123456";
 
 	private ConnectDatabase() {
 	}
